@@ -16,6 +16,7 @@ a{
     color: rgba(0, 0, 0, 0.801);
     font-size: 0.7em;
     margin: 0.9rem 1.8vw 0 1.8vw;
+    font-family: 'Lora', serif;
 }
 .nav-img{
     height: 3rem;
@@ -23,7 +24,7 @@ a{
 }
 .welcome-container {
     display: grid;
-    grid-template-columns: 1.23fr 0.6fr;
+    grid-template-columns: 1fr 0.6fr;
     grid-auto-rows: 1fr 1fr;
     grid-template-areas:
       "welcome-text main-photo";
@@ -42,21 +43,21 @@ a{
     padding-left: 1rem;
   }
   
-  .slogan { grid-area: slogan; font-size: 1.1em; margin-top: 0.5rem;}
+  .slogan { grid-area: slogan; font-size: 1.1em; margin-top: 0.5rem; font-family: 'Montserrat', sans-serif;}
   
-  .slogan-small { grid-area: slogan-small;font-size: 0.8em;}
+  .slogan-small { grid-area: slogan-small;font-size: 0.7em; font-family: 'Lora', serif; font-weight: 100;}
   
-  .cta-btn { grid-area: cta-btn; margin-bottom: 1rem; height: 2rem; width: 5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white;}
+  .cta-btn { grid-area: cta-btn; margin-bottom: 1.1em; height: 2rem; width: 5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif;}
   
-  .main-photo { grid-area: main-photo; width: 75%; margin-top: 0.5rem;}
+  .main-photo { grid-area: main-photo; width: 75%; margin: 0.5rem 0 0 1rem;}
 
 #navy-container{
     background-color: #00293aff; color: white;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 #white-container{
     background-color: rgb(255, 255, 255);
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 .container{
     width: 100%;
@@ -65,8 +66,14 @@ a{
     width: 100%;
     text-align: center;
     padding: 1rem 0 1rem 0;
+    font-weight: 100;
+    font-size: 0.8em;
 }
-.number{height: 3rem; width: 1.5rem;}
+.container-header h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.number{height: 3rem; width: 1.5rem; margin-bottom: 0.5rem;}
 .treatments{display: flex; flex-wrap: wrap; justify-content: center;}
 .treatment{
     width: 4rem;
@@ -94,7 +101,7 @@ a{
 .clinic-img{
     width: 80%;
     height: 22vh;
-    background-image: url("../static/images/image0.jpeg");
+    background-image: url("../images/image0.jpeg");
     background-position: center;
     background-size: cover;
     margin: 0 auto;
@@ -104,11 +111,11 @@ a{
 }
 .clinic-about{
     padding: 8% 6% 8% 8%;
-    width: 40%;
+    width: 30%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
 .about{display: flex; padding: 0 5% 0 5%;}
 .about-photo{
@@ -116,10 +123,11 @@ a{
     height: 25vh;
 }
 .about-texts{
-    width: 40%;
+    width: 45%;
     height: 20vh;
-    font-size: 0.7em;
+    font-size: 0.65em;
     margin-left: 10%;
+    font-family: 'Lora', serif;
 }
 .transformations-btn{
     border-radius: 50%;
@@ -132,6 +140,24 @@ a{
     float: right;
     margin-top: 1rem 3rem 0 0 ;
 }
+.opinions{
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.opinion-container{
+    margin: 0 auto; 
+    width: 80%; 
+    height: 5rem;
+    border: solid 4px #00293aff;
+    margin: 1rem 0 1rem 0;
+    border-radius: 5px;
+}
+.more-opinions{
+    margin: 0 40% 0 40%;
+}
+footer{background-color: #00293aff;}
   @media(min-width: 1200px){
     .main-photo { grid-area: main-photo; width: 30%; margin-top: 0.5rem;}
   }
