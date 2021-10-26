@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.nav-link{
+    color: rgba(0, 0, 0, 0.801);
+    font-size: 0.7em;
+    margin: 0.9rem 1.8vw 0 1.8vw;
+}
+.nav-img{
+    height: 3rem;
+    margin: 0 1rem 0 1rem;
+}
+.welcome-container {
+    display: grid;
+    grid-template-columns: 1.23fr 0.6fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-template-areas:
+      "welcome-text main-photo";
+      margin-top: 1rem;
+  }
+  
+  .welcome-text {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "slogan"
+      "slogan-small"
+      "cta-btn";
+    grid-area: welcome-text;
+    padding-left: 1rem;
+  }
+  
+  .slogan { grid-area: slogan; font-size: 1.1em; margin-top: 0.5rem;}
+  
+  .slogan-small { grid-area: slogan-small;font-size: 0.8em;}
+  
+  .cta-btn { grid-area: cta-btn; margin-bottom: 1rem; height: 2rem; width: 5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white;}
+  
+  .main-photo { grid-area: main-photo; width: 75%; margin-top: 0.5rem;}
+
+#navy-container{
+    background-color: #00293aff; color: white;
+    padding-bottom: 2rem;
+}
+#white-container{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 2rem;
+}
+.container-header{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+.number{height: 3rem; width: 1.5rem;}
+.treatments{display: flex; flex-wrap: wrap; justify-content: center;}
+.treatment{
+    width: 4rem;
+    height: 4rem;
+    border: solid 1.5px white;
+    border-radius: 5px;
+    margin: 1rem 2% 1rem 2%;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 70% 30%; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "treatment-img"
+    "treatment-txt"; 
+    justify-content: center; 
+    justify-items: center; 
+    font-size: 0.4em;
+}
+.treatment-img {
+    height: 60%;
+    grid-area: treatment-img; 
+    margin-top: 0.4rem;
+}
+.treatment-txt { grid-area: treatment-txt; text-align: center;}
+.clinic-img{
+    width: 80%;
+    height: 22vh;
+    background-image: url("../static/images/image0.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: solid 4px #00293aff;
+    overflow: hidden;
+}
+.about-clinic{
+    padding: 8% 6% 8% 8%;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    font-size: 0.6em;
+}
+  @media(min-width: 1200px){
+    .main-photo { grid-area: main-photo; width: 30%; margin-top: 0.5rem;}
+  }
