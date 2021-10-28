@@ -15,8 +15,8 @@ a{
 }
 .nav-link{
     color: rgba(0, 0, 0, 0.801);
-    font-size: 0.8em;
-    margin: 0.9rem 1.9vw 0 1.9vw;
+    font-size: 0.75em;
+    margin: 1rem 1.9vw 0 1.9vw;
     font-family: 'Lora', serif;
 }
 .nav-img{
@@ -25,11 +25,11 @@ a{
 }
 .welcome-container {
     display: grid;
-    grid-template-columns: 1fr 0.6fr;
+    grid-template-columns: 1.8fr 0.5fr;
     grid-auto-rows: 1fr 1fr;
     grid-template-areas:
       "welcome-text main-photo";
-      margin-top: 1rem;
+      margin-top: 2rem;
   }
   
   .welcome-text {
@@ -44,21 +44,21 @@ a{
     padding-left: 1rem;
   }
   
-  .slogan { grid-area: slogan; font-size: 1.2em; margin-top: 0.5rem; font-family: 'Montserrat', sans-serif; font-weight: 500;}
+  .slogan { grid-area: slogan; font-size: 1.4em; font-family: 'Montserrat', sans-serif; font-weight: 600;}
   
-  .slogan-small { grid-area: slogan-small;font-size: 0.7em; font-family: 'Lora', serif; font-weight: 100;}
+  .slogan-small { grid-area: slogan-small;font-size: 0.8em; font-family: 'Lora', serif; font-weight: 100;}
   
-  .cta-btn { grid-area: cta-btn; margin-bottom: 1.1em; height: 2rem; width: 5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif;}
+  .cta-btn { grid-area: cta-btn; margin-bottom: 1.1em; height: 2.5rem; width: 5.5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif;}
   
-  .main-photo { grid-area: main-photo; width: 75%; margin: 0.5rem 0 0 1rem;}
+  .main-photo { grid-area: main-photo; width: 140%; margin: 2rem 0 0 -3rem;}
 
 #navy-container{
     background-color: #00293aff; color: white;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 #white-container{
     background-color: rgb(255, 255, 255);
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 .container{
     width: 100%;
@@ -101,8 +101,8 @@ a{
 }
 .treatment-txt { grid-area: treatment-txt; text-align: center;}
 .clinic-img{
-    width: 80%;
-    height: 24vh;
+    width: 19rem;
+    height: 14rem;
     background-image: url("../images/image0.jpeg");
     background-position: center;
     background-size: cover;
@@ -117,12 +117,13 @@ a{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
-    font-size: 0.55em;
+    font-size: 0.65em;
 }
-.about{display: flex; padding: 0 5% 0 5%; width: 90%;} 
+.about{display: flex; padding: 0 5% 0 1rem; width: 90%;} 
 .about-photo{
-    width: 45%;
-    height: 27vh;
+    width: 9rem;
+    height: 12rem;
+    border-radius: 5px;
 }
 .about-texts{
     width: 45%;
@@ -167,7 +168,7 @@ a{
     align-items: center; 
 
   }
-  .avatar { grid-area: avatar; height: 3.5rem;}
+  .avatar { grid-area: avatar; height: 3.5rem; margin-left: 0.2rem;}
   .name { grid-area: name; font-size: 0.8em; font-family: 'Montserrat', sans-serif;}
   .description { grid-area: description; font-size: 0.6em; margin: 0 0 1rem 0.8rem; font-family: 'Lora', serif;}
   .stars { grid-area: stars; }
@@ -216,25 +217,35 @@ a{
     padding: 0.5rem 0.5rem 0.5rem 0.8rem;
     font-family: 'Montserrat', sans-serif;
 }
-footer{background-color: #00293aff; border-top: #ab9b76ff 1px solid; display: flex; flex-wrap: wrap;}
+footer{
+    background-color: #00293aff; 
+    border-top: #ab9b76ff 1px solid; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+      "footer-logo social-media"
+      "footer-logo footer-contact"; 
+}
 .footer-logo{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 2rem;
+    width: 90%;
+    margin: 2.5rem 0 0 1rem;
+    grid-area: footer-logo; 
 }
 .media-logo{
     background-position: center;
     background-size: cover;
-    width: 3rem;
-    height: 3rem;
+    width: 1.7rem;
+    height: 1.7rem;
     display: block;
-    margin: 2rem 1rem 1rem 1rem;
+    margin: 2rem 0.8rem 0 1rem;
 }
 .social-media{
+    grid-area: social-media;
     width: 100%;
     height: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: right;
 }
 #facebook{
     background-image: url("../images/fbicon.png");
@@ -247,11 +258,11 @@ footer{background-color: #00293aff; border-top: #ab9b76ff 1px solid; display: fl
 }
 .footer-contact{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 4rem 0 2rem 0;
-    justify-content: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.705);
+    grid-area: footer-contact;
+    font-size: 0.5rem;
+    text-align: left;
+    margin: 0 0 2rem 1.6rem;
 }
   @media(min-width: 1200px){
     .main-photo { grid-area: main-photo; width: 30%; margin-top: 0.5rem;}
