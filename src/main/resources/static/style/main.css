@@ -54,11 +54,11 @@ a{
 
 .navy-container{
     background-color: #00293aff; color: white;
-    padding: 1rem 0 3rem 0;
+    padding: 3rem 0 5rem 0;
 }
 .white-container{
     background-color: rgb(255, 255, 255);
-    padding: 1rem 0 3rem 0;
+    padding: 3rem 0 5rem 0;
 }
 .container{
     width: 100%;
@@ -96,7 +96,7 @@ a{
     justify-content: center; 
     justify-items: center; 
     align-items: center;
-    font-size: 0.15em;
+    font-size: 0.1em;
     overflow: hidden;
 }
 .treatment-img {
@@ -184,6 +184,15 @@ a{
     margin: 0 40% 0 40%;
     color: black; font-family: 'Lora', serif;
 }
+#contact-container{
+    width: 80%;
+    height: 18rem;
+    box-shadow: 4px 24px 40px #6d6dad65;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    border-radius: 8px;
+    padding: 2rem 0.5rem 0 0.5rem;
+}
 .contact-form{
     display: flex;
     flex-wrap: wrap;
@@ -192,7 +201,6 @@ a{
 }
 #email-input{
     width: 50%; 
-    margin-top: 1.5rem;
 }
 #message-input{
     width: 70%; 
@@ -206,23 +214,23 @@ a{
     border-radius: 8px;
 }
 ::placeholder {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     opacity: 1;
   }
   :-ms-input-placeholder {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   ::-ms-input-placeholder {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
 
 .input{
     margin: 0rem 15% 2rem 15%;
-    border-radius: 5px;
-    border: solid white 1.5px;
-    background-color: rgba(0, 41, 58, 0);
+    border-radius: 8px;
+    border: none;
     padding: 0.5rem 0.5rem 0.5rem 0.8rem;
     font-family: 'Montserrat', sans-serif;
+    box-shadow: 4px 24px 40px #6d6dad65;
 }
 footer{
     background-color: #00293aff; 
