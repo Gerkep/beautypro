@@ -48,25 +48,26 @@ a{
   
   .slogan-small { grid-area: slogan-small;font-size: 0.8em; font-family: 'DM Sans', sans-serif; font-weight: 100;}
   
-  .cta-btn { grid-area: cta-btn; margin-bottom: 1.1em; height: 2.5rem; width: 5.5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif; font-size: 0.9em; font-weight: 500;}
+  .cta-btn { grid-area: cta-btn;     box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 2.5rem; width: 5.5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif; font-size: 0.9em; font-weight: 500;}
   
   .main-photo { grid-area: main-photo; width: 140%; margin: 2rem 0 0 -3rem;}
 
-#navy-container{
+.navy-container{
     background-color: #00293aff; color: white;
-    padding-bottom: 3rem;
+    padding: 1rem 0 3rem 0;
 }
-#white-container{
+.white-container{
     background-color: rgb(255, 255, 255);
-    padding-bottom: 3rem;
+    padding: 1rem 0 3rem 0;
 }
 .container{
     width: 100%;
+    border-radius: 8px;
 }
 .container-header{
     width: 100%;
     text-align: center;
-    padding: 1rem 0 1rem 0;
+    padding-bottom: 1rem;
     font-weight: 100;
     font-size: 1em;
 }
@@ -76,10 +77,11 @@ a{
     margin-bottom: 2rem;
 }
 .header{float: left; margin: 1rem 0 1rem 1rem;}
+#treatments-container{padding: 0 0 2rem 0;}
 .treatments{display: flex; flex-wrap: wrap; justify-content: center; width: 100%; height: auto;}
 .treatment{
-    width: 4.2rem;
-    height: 4rem;
+    width: 4.1rem;
+    height: 4.2rem;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
     border: solid 1.5px white;
     border-radius: 8px;
@@ -94,7 +96,7 @@ a{
     justify-content: center; 
     justify-items: center; 
     align-items: center;
-    font-size: 0.3em;
+    font-size: 0.15em;
     overflow: hidden;
 }
 .treatment-img {
@@ -201,7 +203,7 @@ a{
     border: solid white 1px;
     background-color: rgba(0, 41, 58, 0);
     color: white; font-family: 'Montserrat', sans-serif;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 ::placeholder {
     color: rgb(255, 255, 255);
