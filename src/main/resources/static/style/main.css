@@ -10,17 +10,18 @@ a{
     flex-wrap: nowrap;
     overflow: hidden;
     justify-content: center;
+    align-items: center;
     padding-top: 1rem;
     width: 100%;
 }
 .nav-link{
     color: rgba(0, 0, 0, 0.801);
-    font-size: 0.75em;
-    margin: 1rem 1.9vw 0 1.9vw;
+    font-size: 3.2vw;
+    margin: 0 1.9vw 0 1.9vw;
     font-family: 'DM Sans', sans-serif;
 }
 .nav-img{
-    height: 4rem;
+    height: 12vw;
     margin: 0 1rem 0 1rem;
 }
 .welcome-container {
@@ -41,24 +42,24 @@ a{
       "slogan-small"
       "cta-btn";
     grid-area: welcome-text;
-    padding-left: 1rem;
+    padding-left: 4vw;
   }
   
-  .slogan { grid-area: slogan; font-size: 1.4em; font-family: 'Montserrat', sans-serif; font-weight: 600;}
+  .slogan { grid-area: slogan; font-size: 5.5vw; font-family: 'Montserrat', sans-serif; font-weight: 600;}
   
-  .slogan-small { grid-area: slogan-small;font-size: 0.8em; font-family: 'DM Sans', sans-serif; font-weight: 100;}
+  .slogan-small { grid-area: slogan-small;font-size: 3.4vw; font-family: 'DM Sans', sans-serif; font-weight: 100;}
   
-  .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 2.5rem; width: 5.5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif; font-size: 0.9em; font-weight: 500;}
+  .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 25px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif; font-size: 4vw; font-weight: 500;}
   
-  .main-photo { grid-area: main-photo; width: 140%; margin: 2rem 0 0 -3rem; z-index: -1;}
+  .main-photo { grid-area: main-photo; width: 140%; margin: 2rem 0 0 -12vw; z-index: -1;}
 
 .navy-container{
     background-color: #00293aff; color: white;
-    padding: 3rem 0 5rem 0;
+    padding: 8vw 0 25vw 0;
 }
 .white-container{
     background-color: rgb(255, 255, 255);
-    padding: 3rem 0 5rem 0;
+    padding: 8vw 0 25vw 0;
 }
 .container{
     width: 100%;
@@ -67,24 +68,23 @@ a{
 .container-header{
     width: 100%;
     text-align: center;
-    padding-bottom: 1rem;
-    font-size: 1em;
+    font-size: 4vw;
 }
 .container-header h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 8vw;
 }
 .header{float: left; margin: 1rem 0 1rem 1rem;}
 #treatments-container{padding: 0 0 2rem 0; margin-top: -0.1rem; z-index: 100;}
 .treatments{display: flex; flex-wrap: wrap; justify-content: center; width: 100%; height: auto;}
 .treatment{
-    width: 4.1rem;
-    height: 4.2rem;
-    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    width: 18vw;
+    height: 18vw;
+    padding: 0.8vw 0.8vw 0.8vw 0.8vw;
     border: solid 1.5px white;
     border-radius: 12px;
-    margin: 0rem 2% 1rem 2%;
+    margin: 1vw 2vw 1vw 2vw;
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 65% 35%; 
@@ -95,7 +95,7 @@ a{
     justify-content: center; 
     justify-items: center; 
     align-items: center;
-    font-size: 0.05em;
+    font-size: 2vw;
     overflow: hidden;
 }
 .treatment-img {
@@ -105,8 +105,8 @@ a{
 }
 .treatment-txt { grid-area: treatment-txt;font-family: 'DM Sans', sans-serif; text-align: center; color: white;}
 .clinic-img{
-    width: 21rem;
-    height: 15.5rem;
+    width: 90vw;
+    height: 67vw;
     background-image: url("../images/image0.jpeg");
     background-position: center;
     background-size: cover;
@@ -122,18 +122,18 @@ a{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
-    font-size: 0.65em; font-family: 'DM Sans', sans-serif;
+    font-size: 2.8vw; font-family: 'DM Sans', sans-serif;
 }
 .about{display: flex; padding: 0 5% 0 1rem; width: 90%;} 
 .about-photo{
-    width: 9rem;
-    height: 12rem;
+    width: 40vw;
+    height: 50vw;
     border-radius: 5px;
 }
 .about-texts{
     width: 45%;
     height: 20vh;
-    font-size: 0.68em;
+    font-size: 3vw;
     margin-left: 10%;
     font-family: 'DM Sans', sans-serif;
 }
@@ -280,5 +280,4 @@ footer{
   
 .copyright{float: right; margin-right: 0.4rem; margin-top: 0rem;}
   @media(min-width: 1200px){
-    .main-photo { grid-area: main-photo; width: 30%; margin-top: 0.5rem;}
   }
