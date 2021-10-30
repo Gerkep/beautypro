@@ -48,7 +48,7 @@ a{
   
   .slogan-small { grid-area: slogan-small;font-size: 0.8em; font-family: 'DM Sans', sans-serif; font-weight: 100;}
   
-  .cta-btn { grid-area: cta-btn; margin-bottom: 1.1em; height: 2.5rem; width: 5.5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif; font-weight: 500;}
+  .cta-btn { grid-area: cta-btn; margin-bottom: 1.1em; height: 2.5rem; width: 5.5rem; border-radius: 15px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif; font-size: 0.9em; font-weight: 500;}
   
   .main-photo { grid-area: main-photo; width: 140%; margin: 2rem 0 0 -3rem;}
 
@@ -78,26 +78,29 @@ a{
 .header{float: left; margin: 1rem 0 1rem 1rem;}
 .treatments{display: flex; flex-wrap: wrap; justify-content: center; width: 100%; height: auto;}
 .treatment{
-    width: 4.4rem;
-    height: 4.4rem;
+    width: 4.2rem;
+    height: 4rem;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
     border: solid 1.5px white;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 0rem 2% 1rem 2%;
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 70% 30%; 
+    grid-template-rows: 65% 35%; 
     gap: 0px 0px; 
     grid-template-areas: 
     "treatment-img"
     "treatment-txt"; 
     justify-content: center; 
     justify-items: center; 
-    font-size: 0.4em;
+    align-items: center;
+    font-size: 0.3em;
+    overflow: hidden;
 }
 .treatment-img {
-    height: 70%;
+    max-height: 70%;
     grid-area: treatment-img; 
-    margin-top: 0.4rem;
+    max-width: 60%;
 }
 .treatment-txt { grid-area: treatment-txt;font-family: 'DM Sans', sans-serif; text-align: center; color: white;}
 .clinic-img{
@@ -108,9 +111,9 @@ a{
     background-size: cover;
     margin: 0 auto;
     margin-top: 4rem;
-    border-radius: 5px;
-    border: solid 4px #00293aff;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 4px 24px 40px #6d6dad65;
 }
 .clinic-about{
     padding: 8% 5% 8% 5%;
@@ -118,7 +121,7 @@ a{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
-    font-size: 0.6em; font-family: 'DM Sans', sans-serif;
+    font-size: 0.55em; font-family: 'DM Sans', sans-serif;
 }
 .about{display: flex; padding: 0 5% 0 1rem; width: 90%;} 
 .about-photo{
@@ -154,10 +157,10 @@ a{
     margin: 0 auto; 
     width: 80%; 
     height: 5rem;
-    border: solid 4px #00293aff;
+    box-shadow: 4px 24px 60px #6d6dad49;
     margin: 1rem 0 1rem 0;
     padding: 0.2rem 0.5rem 0.5rem 0.5rem;
-    border-radius: 5px;
+    border-radius: 8px;
     display: grid; 
     grid-template-columns: 20% 50% 30%; 
     grid-template-rows: 2rem 3rem; 
@@ -231,7 +234,7 @@ footer{
 }
 .footer-logo{
     width: 90%;
-    margin: 1.4rem 0 0 1rem;
+    margin: 2rem 0 0 1rem;
     grid-area: footer-logo; 
 }
 .media-logo{
@@ -262,10 +265,13 @@ footer{
     max-width: 100%;
     color: rgba(255, 255, 255, 0.705);
     grid-area: footer-contact;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     text-align: left;
-    margin: -1rem 0 01rem 1.6rem;
+    margin: -0.5rem 0 01rem 1.6rem;
+    font-weight: 100;
+    font-family: 'DM Sans', sans-serif;
 }
+  
 .copyright{float: right; margin-right: 0.4rem; margin-top: 0rem;}
   @media(min-width: 1200px){
     .main-photo { grid-area: main-photo; width: 30%; margin-top: 0.5rem;}
