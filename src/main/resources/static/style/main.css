@@ -19,7 +19,7 @@ a{
     color: rgba(0, 0, 0, 0.801);
     font-size: 3.2vw;
     margin: 0 1.9vw 0 1.9vw;
-    font-family: 'DM Sans', sans-serif;
+      font-family: 'Lora', serif;
 }
 .nav-img{
     height: 12vw;
@@ -28,7 +28,7 @@ a{
 .welcome-container {
     display: grid;
     grid-template-columns: 1.7fr 0.5fr;
-    grid-auto-rows: 1fr 1fr;
+    grid-auto-rows: 31vh 30vh;
     grid-template-areas:
       "welcome-text main-photo";
       margin-top: 2rem;
@@ -46,13 +46,15 @@ a{
   }
   .side-text{grid-area: side-text; display: none;}
   .outstanding-txt{font-weight: 600; color: #00293aff;}
-  .slogan { grid-area: slogan; font-size: 5.5vw; font-family: 'Montserrat', sans-serif; font-weight: 600;}
+  .slogan { grid-area: slogan; font-size: 5.5vw; font-family: 'Montserrat', sans-serif;
+ font-weight: 400; font-weight: 600;}
   
-  .slogan-small { grid-area: slogan-small;font-size: 3.2vw; font-family: 'DM Sans', sans-serif; font-weight: 100;}
+  .slogan-small { grid-area: slogan-small;font-size: 3.2vw;   font-family: 'Lora', serif; font-weight: 100;}
   
-  .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 25px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif; font-size: 4vw; font-weight: 500;}
+  .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 25px; border: none; background-color: #00293aff; color: white;   font-family: 'Montserrat', sans-serif;
+ font-weight: 400; font-size: 4vw; font-weight: 500;}
   
-  .main-photo { grid-area: main-photo; width: 200%; margin: 2rem 0 0 -26vw; z-index: -1;}
+  .main-photo { grid-area: main-photo; width: 220%; margin: 3vh 0 0 -28vw; z-index: -1;}
 
 .navy-container{
     background-color: #00293aff; color: white;
@@ -75,7 +77,7 @@ a{
 }
 .container-header h2{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 8vw;
 }
 .header-desktop{display: none;}
@@ -107,7 +109,7 @@ a{
     grid-area: treatment-img; 
     max-width: 60%;
 }
-.treatment-txt { grid-area: treatment-txt;font-family: 'DM Sans', sans-serif; text-align: center; color: white;}
+.treatment-txt { grid-area: treatment-txt;  font-family: 'Lora', serif; text-align: center; color: white;}
 .clinic-img{
     width: 90vw;
     height: 67vw;
@@ -126,7 +128,7 @@ a{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
-    font-size: 2.8vw; font-family: 'DM Sans', sans-serif;
+    font-size: 2.8vw;   font-family: 'Lora', serif;
 }
 .about{display: flex; padding: 0 5% 0 4vw; width: 90%;} 
 .aboutclinic-desktop{display: none;}
@@ -140,7 +142,7 @@ a{
     height: 20vh;
     font-size: 3vw;
     margin-left: 10%;
-    font-family: 'DM Sans', sans-serif;
+      font-family: 'Lora', serif;
 }
 .transformations-btn{
     border-radius: 50%;
@@ -182,8 +184,9 @@ a{
 
   }
   .avatar { grid-area: avatar; height: 17vw; margin-left: 0.8vw;}
-  .name { grid-area: name; overflow: hidden; font-size: 4vw; margin-left: 0.4vw; font-family: 'Montserrat', sans-serif;}
-  .description { grid-area: description; font-size: 2.6vw; margin: 1.2vw 0 4vw 4vw; font-family: 'DM Sans', sans-serif; font-weight: 500;}
+  .name { grid-area: name; overflow: hidden; font-size: 4vw; margin-left: 0.4vw;   font-family: 'Montserrat', sans-serif;
+ font-weight: 400;}
+  .description { grid-area: description; font-size: 2.6vw; margin: 1.2vw 0 4vw 4vw;   font-family: 'Lora', serif; font-weight: 500;}
   .stars { grid-area: stars; width: 22vw;}
 
 .more-opinions{
@@ -214,7 +217,8 @@ a{
     padding: 0.3rem 0 0.3rem 0;
     border: solid white 1px;
     background-color: rgba(0, 41, 58, 0);
-    color: white; font-family: 'Montserrat', sans-serif;
+    color: white;   font-family: 'Montserrat', sans-serif;
+ font-weight: 400;
     border-radius: 8px;
 }
 ::placeholder {
@@ -234,7 +238,8 @@ a{
     border: solid white 1.5px;
     background-color: rgba(0, 41, 58, 0);
     padding: 0.5rem 0.5rem 0.5rem 0.8rem;
-    font-family: 'Montserrat', sans-serif;
+      font-family: 'Montserrat', sans-serif;
+ font-weight: 400;
     color: white;
 }
 footer{
@@ -287,7 +292,7 @@ footer{
     font-size: 3vw;
     text-align: center;
     font-weight: 100;
-    font-family: 'DM Sans', sans-serif;
+      font-family: 'Lora', serif;
     margin-bottom: 2vh;
 }
 .privacy-policy{color: rgba(255, 255, 255, 0.493);}
@@ -349,7 +354,8 @@ footer{
     .clinic-about{
         display: none;
     }
-    .header-desktop{grid-area: header-desktop; display: block; margin-top: 3vh; font-size: 3vw; font-family: 'Montserrat', sans-serif;}
+    .header-desktop{grid-area: header-desktop; display: block; margin-top: 3vh; font-size: 3vw;   font-family: 'Montserrat', sans-serif;
+ font-weight: 400;}
     #clinic-header{display: none;}
     .aboutclinic-desktop{display: block; grid-area: aboutclinic-desktop; font-size: 1.5vw;}
     .clinic{
@@ -439,7 +445,7 @@ footer{
         grid-template-areas: 
           "footer-logo footer-contact social-media";
         justify-content: center; 
-        font-family: 'DM Sans', sans-serif;
+          font-family: 'Lora', serif;
     }
     .footer-logo{
         width: 80%;

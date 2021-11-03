@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.page-header{
+    border-bottom: solid 1px #00293aff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 2vh 0 2vh;
+    top: 0;
+    position: fixed;
+    background-color: rgb(0, 41, 58);
+    width: 100%;
+    color: white;
+}
+.page-title{
+    text-align: center;
+}
+.treatments{
+    margin-top: 10vh;
+}
+.treatments-container{
+    padding: 2vh 0 2vh 0;
+    display: grid; 
+    grid-template-columns: 60% 30% ; 
+    grid-template-rows: 14vh 1fr; 
+    grid-template-areas: 
+      "treatment-header treatment-header"
+      "treatment-names treatment-pricing"; 
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center; 
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+.treatments-container.active{
+    transition: 0.5s ease;
+    transform: scale(1.05);
+    box-shadow: 8px 24px 40px rgba(0, 0, 0, 0.267);
+    border-radius: 30px;
+
+}
+.treatment-header{
+    text-align: center;
+    grid-area: treatment-header;
+    font-family: 'Montserrat', sans-serif;
+}
+.treatment-names{
+    grid-area: treatment-names;
+}
+.treatment-pricing{
+    grid-area: treatment-pricing;
+    text-align: right;
+}
+.frequency{
+    font-size: 3.5vw;
+}
+.treatment-name{
+    display: flex; align-items: center;
+}
