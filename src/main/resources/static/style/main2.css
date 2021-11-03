@@ -4,7 +4,6 @@
 }
 a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.705);
 }
 .navbar{
     display: flex;
@@ -13,7 +12,6 @@ a{
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 2vh;
 }
 .nav-link{
     color: rgba(0, 0, 0, 0.801);
@@ -27,7 +25,7 @@ a{
 }
 .welcome-container {
     display: grid;
-    grid-template-columns: 1.7fr 0.5fr;
+    grid-template-columns: 1.8fr 0.5fr;
     grid-auto-rows: 1fr 1fr;
     grid-template-areas:
       "welcome-text main-photo";
@@ -48,14 +46,14 @@ a{
   .outstanding-txt{font-weight: 600; color: #00293aff;}
   .slogan { grid-area: slogan; font-size: 5.5vw; font-family: 'Montserrat', sans-serif; font-weight: 600;}
   
-  .slogan-small { grid-area: slogan-small;font-size: 3.2vw; font-family: 'DM Sans', sans-serif; font-weight: 100;}
+  .slogan-small { grid-area: slogan-small;font-size: 3.4vw; font-family: 'DM Sans', sans-serif; font-weight: 100;}
   
   .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 25px; border: none; background-color: #00293aff; color: white; font-family: 'Montserrat', sans-serif; font-size: 4vw; font-weight: 500;}
   
-  .main-photo { grid-area: main-photo; width: 200%; margin: 2rem 0 0 -26vw; z-index: -1;}
+  .main-photo { grid-area: main-photo; width: 140%; margin: 2rem 0 0 -12vw; z-index: -1;}
 
 .navy-container{
-    background-color: #00293aff; color: white;
+    background-color: #00293aff; color: rgb(0, 0, 0);
     padding: 8vw 0 20vw 0;
 }
 .white-container{
@@ -78,36 +76,22 @@ a{
     font-weight: 500;
     margin-bottom: 8vw;
 }
-.header-desktop{display: none;}
 .header{float: left; margin: 1rem 4vw 1rem;}
-#treatments-container{padding: 3vw 0 10vw 0; margin-top: -0.1rem; z-index: 100;}
-.treatments{display: flex; flex-wrap: wrap; justify-content: center; width: 100%; height: auto;}
+#treatments-container{padding: 3vw 0 10vw 0; margin-top: -0.1rem; z-index: 100; background-color: rgba(0, 89, 255, 0.075);}
+.treatments{display: flex; flex-wrap: wrap; width: 100%; justify-content: center;}
 .treatment{
-    width: 18vw;
-    height: 18vw;
-    padding: 0.8vw 0.8vw 0.8vw 0.8vw;
-    border: solid 1.5px white;
-    border-radius: 12px;
-    margin: 1vw 2vw 1vw 2vw;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 65% 35%; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-    "treatment-img"
-    "treatment-txt"; 
-    justify-content: center; 
-    justify-items: center; 
-    align-items: center;
-    font-size: 2vw;
+    width: 40%;
+    height: 30vh;
+    margin: 4vh 3vw 4vh 3vw;
+    background-color: white;
+    box-shadow: 4px 24px 60px #00000065;
+    border-radius: 80px;
     overflow: hidden;
 }
-.treatment-img {
-    max-height: 70%;
-    grid-area: treatment-img; 
-    max-width: 60%;
+.treatment-img{height: 100%; border-radius: 70px; float: right;};
+.treatment-header{
+    font-size: 1vw;
 }
-.treatment-txt { grid-area: treatment-txt;font-family: 'DM Sans', sans-serif; text-align: center; color: white;}
 .clinic-img{
     width: 90vw;
     height: 67vw;
@@ -115,11 +99,12 @@ a{
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+    margin-top: 4rem;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 4px 24px 40px #6d6dad65;
 }
-.clinic{margin: 0 auto}
+.aboutclinic-desktop{display: none;}
 .clinic-about{
     padding: 8% 5% 8% 5%;
     width: 34%;
@@ -129,7 +114,6 @@ a{
     font-size: 2.8vw; font-family: 'DM Sans', sans-serif;
 }
 .about{display: flex; padding: 0 5% 0 4vw; width: 90%;} 
-.aboutclinic-desktop{display: none;}
 .about-photo{
     width: 41vw;
     height: 55vw;
@@ -235,40 +219,34 @@ a{
     background-color: rgba(0, 41, 58, 0);
     padding: 0.5rem 0.5rem 0.5rem 0.8rem;
     font-family: 'Montserrat', sans-serif;
-    color: white;
 }
 footer{
     background-color: #00293aff; 
     border-top: #ab9b76ff 1px solid; 
     display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 15vh 12vh 17vh; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
     grid-template-areas: 
-      "footer-logo"
-      "social-media"
-      "footer-contact"; 
-    justify-content: center; 
-    justify-items: center; 
-    align-items: center; 
+      "footer-logo social-media"
+      "footer-logo footer-contact"; 
 }
 .footer-logo{
-    margin-top: 2vh;
-    width: 50%;
+    width: 90%;
+    margin: 10vw 0 0 1rem;
     grid-area: footer-logo; 
 }
-.footer-links{display: none;}
 .media-logo{
     background-position: center;
     background-size: cover;
     width: 8vw;
     height: 8vw;
     display: block;
-    margin: 0 7vw 0 7vw;
+    margin: 8vw 4vw 0 7vw;
 }
 .social-media{
     grid-area: social-media;
+    width: 100%;
     height: 3rem;
-    margin-top: 2vh;
     display: flex;
     justify-content: right;
 }
@@ -282,16 +260,17 @@ footer{
     background-image: url("../images/whatsappicon.png");
 }
 .footer-contact{
+    max-width: 100%;
     color: rgba(255, 255, 255, 0.705);
     grid-area: footer-contact;
     font-size: 3vw;
-    text-align: center;
+    text-align: left;
+    margin: -0.5rem 0 01rem 1.6rem;
     font-weight: 100;
     font-family: 'DM Sans', sans-serif;
-    margin-bottom: 2vh;
 }
-.privacy-policy{color: rgba(255, 255, 255, 0.493);}
-
+  
+.copyright{float: right; margin-right: 0.4rem; margin-top: 0rem;}
   @media(min-width: 1200px){
     .navbar{
         padding: 2vh 0 1vh 0;
@@ -316,159 +295,25 @@ footer{
     .slogan {font-size:4vw; font-weight: 400;}
     .slogan-small {font-size: 2.5vw;}
     .cta-btn {font-size: 2vw; height: 6vw; width: 18vw;}
-    .main-photo {width: 130%; margin: 20vh 0 0 -10vw;}
+    .main-photo {width: 80%; margin: 20vh 0 0 -2vw;}
     .welcome-text {
       margin-top: 14vh;
       padding-left: 6vw;
       align-items: center;
       grid-gap: 3vh;
     }
-    .white-container{padding: 10vh 0 15vh 0;}
-    .navy-container{padding: 0;}
     .container-header h2{
         margin-bottom: 2vw;
         font-size: 3vw;
     }
-    #treatments-container{
-        padding: 2vw 0 5vw 0;
-    }
-    .treatment{
-        width: 8vw;
-        height: 8vw;
-        padding: 0.8vw 0.8vw 0.8vw 0.8vw;
-        border-radius: 12px;
-        margin: 0.5vw 1vw 0.5vw 1vw;
-        font-size: 1vw;
-    }
     .clinic-img{
-        grid-area: clinic-img; 
         width: 34vw;
         height: 25vw;
-        margin: 0 auto;
     }
     .clinic-about{
         display: none;
     }
-    .header-desktop{grid-area: header-desktop; display: block; margin-top: 3vh; font-size: 3vw; font-family: 'Montserrat', sans-serif;}
-    #clinic-header{display: none;}
-    .aboutclinic-desktop{display: block; grid-area: aboutclinic-desktop; font-size: 1.5vw;}
-    .clinic{
-        width: 80%; 
-        padding: 6vh 4vh 6vh 4vh; 
-        border-radius: 20px; 
-        box-shadow: 4px 24px 40px #6d6dad65; 
-        margin: 0 auto;
-        display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 30% 70%; 
-  grid-template-areas: 
-    "header-desktop clinic-img"
-    "aboutclinic-desktop clinic-img"; 
-    }
-    #story-header{margin-top: 8vh;}
-    .about{
-        height: 70vh;
-        display: grid; 
-        grid-template-columns: 40% 60%; 
-        grid-template-rows: 30% 70%; 
-        grid-template-areas: 
-          "about-photo header-desktop"
-          "about-photo about-texts"; 
-    }
-    .about-photo{
-        grid-area: about-photo;
-        height: 100%;
-        width: 28vw;
-        border-radius: 5px;
-    }
-    .about-texts{grid-area: about-texts; font-size: 1.6vw; width: 100%; margin: 0;}
-    #about-containerheader{display: none; }
-    .transformations-btn{
-        height: 6vw;
-        width: 6vw;
-        padding-left: 0.7vw;
-        border: white solid 4px;
-        font-size: 5vw;
-        margin: 2vh 2vw 0 0vw;
-    }
-    .opinion-container{
-        width: 20vw; 
-        height: 25vw;
-        margin: 4vw 4vw 4vw 4vw; 
-        grid-template-columns: 1fr; 
-        grid-template-rows: 40% 15% 10% 35%; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "avatar"
-          "name"
-          "stars"
-          "description"; 
-        justify-content: center; 
-        justify-items: center; 
-        align-items: center; 
-      }
-      .avatar {height: 7vw; margin: 5vh 0 0 0;}
-      .name {font-size: 2vw; margin: 4vh 0 3vh 0;}
-      .description {font-size: 1.2vw; margin: 1vh 0 0 0; text-align: center;}
-      .stars { grid-area: stars; width: 10vw;}
-      #contact-container{
-          width: 80%;
-          margin: 0 auto;
-          padding: 6vh 0 6vh 0;
-          margin-bottom: 14vh;
-          border-bottom-right-radius: 30px;
-          border-bottom-left-radius: 30px;
-          box-shadow: 4px 24px 60px #00000096;
-      }
-      #email-input{
-        height: 6vh;
-        font-size: 1.5vw; 
-    }
-    #message-input{
-        margin-top: 3vh;
-        font-size: 1.5vw; 
-    }
-    .send-btn{
-        padding: 1vh 0 1vh 0;
-        border: solid white 2px;
-        font-size: 1.5vw;
-    }
-    footer{
-        grid-template-columns: 20vw 45vw 35vw; 
-        grid-template-rows: 1fr; 
-        grid-template-areas: 
-          "footer-logo footer-contact social-media";
-        justify-content: center; 
-        font-family: 'DM Sans', sans-serif;
-    }
-    .footer-logo{
-        width: 80%;
-    }
-    .media-logo{
-        width: 3vw;
-        height: 3vw;
-        margin: 0 4vw 0 4vw;
-    }
-    .social-media{
-        margin-top: 0vh;
-    }
-    .footer-text{
-        display: grid; 
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 0px 30px; 
-        grid-template-areas: 
-          "footer-contact footer-links"; 
-        justify-content: center; 
-        justify-items: center; 
-        align-items: center; 
-        margin-left: 8vw;
-    }
-    .footer-contact{
-        margin: 8vh 0 3vh 0;
-        grid-area: footer-contact;
-        font-size: 1vw;
-        text-align: left;
-    }
-    .footer-links{display: block; margin: 8vh 0 3vh 0; font-size: 1vw; color: rgba(255, 255, 255, 0.705);}
+    .aboutclinic-desktop{display: block;}
+    .clinic{width: 80%; box-shadow: 4px 24px 40px #6d6dad65; margin: 0 auto;}
+  
   }
