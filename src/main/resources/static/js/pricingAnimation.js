@@ -5,7 +5,7 @@ const startAnimation = (entries, observer) => {
   };
   
   const observer = new IntersectionObserver(startAnimation);
-  const options = { root: null, rootMargin: '40px', threshold: 1 }; 
+  const options = { root: null, rootMargin: '120px', threshold: 1 }; 
   
   const elements = document.querySelectorAll('.treatments-container');
   elements.forEach(el => {

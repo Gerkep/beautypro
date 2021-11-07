@@ -18,8 +18,15 @@ a{
 .nav-link{
     color: rgba(0, 0, 0, 0.801);
     font-size: 3.2vw;
-    margin: 0 1.9vw 0 1.9vw;
+    margin: 0 1vw 0 1vw;
       font-family: 'Lora', serif;
+      border-radius: 50%;
+      padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+}
+.nav-link:hover{
+    color: white;
+    background-color: #00293aff;
+    border-radius: 5px;
 }
 .nav-img{
     height: 12vw;
@@ -28,7 +35,7 @@ a{
 .welcome-container {
     display: grid;
     grid-template-columns: 1.7fr 0.5fr;
-    grid-auto-rows: 31vh 30vh;
+    grid-auto-rows: 1fr 1fr;
     grid-template-areas:
       "welcome-text main-photo";
       margin-top: 2rem;
@@ -51,10 +58,10 @@ a{
   
   .slogan-small { grid-area: slogan-small;font-size: 3.2vw;   font-family: 'Lora', serif; font-weight: 100;}
   
-  .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 25px; border: none; background-color: #00293aff; color: white;   font-family: 'Montserrat', sans-serif;
+  .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 18px; border: none; background-color: #00293aff; color: white;   font-family: 'Montserrat', sans-serif;
  font-weight: 400; font-size: 4vw; font-weight: 500;}
   
-  .main-photo { grid-area: main-photo; width: 220%; margin: 3vh 0 0 -28vw; z-index: -1;}
+  .main-photo { grid-area: main-photo; width: 220%; margin: 6vh 0 0 -28vw; z-index: -1;}
 
 .navy-container{
     background-color: #00293aff; color: white;
@@ -82,7 +89,7 @@ a{
 }
 .header-desktop{display: none;}
 .header{float: left; margin: 1rem 4vw 1rem;}
-#treatments-container{padding: 3vw 0 10vw 0; margin-top: -0.1rem; z-index: 100;}
+#treatments-container{padding: 3vw 0 10vw 0; z-index: 100;}
 .treatments{display: flex; flex-wrap: wrap; justify-content: center; width: 100%; height: auto;}
 .treatment{
     width: 18vw;
@@ -166,14 +173,14 @@ a{
 .opinion-container{
     margin: 0 auto; 
     width: 80vw; 
-    height: 23vw;
-    box-shadow: 4px 24px 60px #6d6dad49;
+    height: auto;
+    box-shadow: 4px 24px 40px #00003d49;
     margin: 4vw 0 4vw 0;
     padding: 0.8vw 2.4vw 2.4vw 2.4vw;
     border-radius: 4vw;
     display: grid; 
     grid-template-columns: 20% 50% 30%; 
-    grid-template-rows: 10vw 12vw; 
+    grid-template-rows: 0.8fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "avatar name stars"
@@ -181,14 +188,15 @@ a{
     justify-content: center; 
     justify-items: center; 
     align-items: center; 
-
   }
+  #more{display: none;}
+ #more-btn{background-color: transparent; border: none; font-size: 2.6vw;}
   .avatar { grid-area: avatar; height: 17vw; margin-left: 0.8vw;}
   .name { grid-area: name; overflow: hidden; font-size: 4vw; margin-left: 0.4vw;   font-family: 'Montserrat', sans-serif;
  font-weight: 400;}
-  .description { grid-area: description; font-size: 2.6vw; margin: 1.2vw 0 4vw 4vw;   font-family: 'Lora', serif; font-weight: 500;}
+  .description { grid-area: description; font-size: 2.6vw; margin: 2vw 0 2vw 4vw;   font-family: 'Lora', serif; font-weight: 500;}
   .stars { grid-area: stars; width: 22vw;}
-
+  
 .more-opinions{
     margin: 0 40% 0 40%;
     color: black; font-family: 'Lora', serif;
@@ -302,7 +310,7 @@ footer{
         padding: 2vh 0 1vh 0;
     }
     .nav-img{
-        height: 6vw;
+        height: 8vw;
     }
     .welcome-container{
         height: 59vh; 
@@ -417,6 +425,7 @@ footer{
       .name {font-size: 2vw; margin: 4vh 0 3vh 0;}
       .description {font-size: 1.2vw; margin: 1vh 0 0 0; text-align: center;}
       .stars { grid-area: stars; width: 10vw;}
+      .more-opinions{font-size: 2vw;}
       #contact-container{
           width: 80%;
           margin: 0 auto;

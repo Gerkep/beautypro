@@ -13,7 +13,11 @@ public class MainController {
     }
 
     @GetMapping("/pricing")
-    public String pricing() {
+    public String pricingPage() {
         return "pricing.html";
+    }
+    @GetMapping("/transformations")
+    public String transformationsPage() {
+        return "transformations.html";
     }
 }
