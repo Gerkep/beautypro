@@ -58,7 +58,7 @@ a{
   
   .slogan-small { grid-area: slogan-small;font-size: 3.2vw;   font-family: 'Lora', serif; font-weight: 100;}
   
-  .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 18px; border: none; background-color: #00293aff; color: white;   font-family: 'Montserrat', sans-serif;
+  .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 18px; border: none; background-color: #00293aff; color: rgb(255, 255, 255);   font-family: 'Montserrat', sans-serif;
  font-weight: 400; font-size: 4vw; font-weight: 500;}
   
   .main-photo { grid-area: main-photo; width: 220%; margin: 6vh 0 0 -28vw; z-index: -1;}
