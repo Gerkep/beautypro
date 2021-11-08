@@ -169,14 +169,18 @@ a{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center;
+    height: 130vw;
+    overflow: hidden;
+    padding-bottom: 3vw;
 }
+
 .opinion-container{
     margin: 0 auto; 
     width: 80vw; 
     height: auto;
-    box-shadow: 4px 24px 40px #00003d49;
+    box-shadow: 0 10px 20px #00003d49;
     margin: 4vw 0 4vw 0;
-    padding: 0.8vw 2.4vw 2.4vw 2.4vw;
+    padding: 3vw 3vw 3vw 3vw;
     border-radius: 4vw;
     display: grid; 
     grid-template-columns: 20% 50% 30%; 
@@ -188,18 +192,21 @@ a{
     justify-content: center; 
     justify-items: center; 
     align-items: center; 
+    opacity: 0;
   }
+  .opinion-container.active{opacity: 1; transition: all 1s ease; transform: scale(1.04);}
   #more{display: none;}
- #more-btn{background-color: transparent; border: none; font-size: 2.6vw;}
+ #more-btn{background-color: transparent; border: none; font-size: 4vw;}
   .avatar { grid-area: avatar; height: 17vw; margin-left: 0.8vw;}
   .name { grid-area: name; overflow: hidden; font-size: 4vw; margin-left: 0.4vw;   font-family: 'Montserrat', sans-serif;
  font-weight: 400;}
-  .description { grid-area: description; font-size: 2.6vw; margin: 2vw 0 2vw 4vw;   font-family: 'Lora', serif; font-weight: 500;}
+  .description { grid-area: description; font-size: 2.8vw; margin: 2vw 0 2vw 4vw;   font-family: 'Lora', serif; font-weight: 500;}
   .stars { grid-area: stars; width: 22vw;}
   
 .more-opinions{
-    margin: 0 40% 0 40%;
-    color: black; font-family: 'Lora', serif;
+    margin: 3vw 40% 0 40%;
+    color: black; font-family: 'Lora', serif; font-size: 5vw;
+    background-color: transparent; border: none;
 }
 #contact-container{
     border-bottom-right-radius: 0px;
@@ -255,7 +262,7 @@ footer{
     border-top: #ab9b76ff 1px solid; 
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 15vh 12vh 17vh; 
+    grid-template-rows: 30vw 24vw 34vw; 
     grid-template-areas: 
       "footer-logo"
       "social-media"
@@ -289,7 +296,7 @@ footer{
     background-image: url("../images/fbicon.png");
 }
 #insta{
-    background-image: url("../images/path4537.png");
+    background-image: url("../images/insta_icon.png");
 }
 #whatsapp{
     background-image: url("../images/whatsappicon.png");
@@ -393,7 +400,7 @@ footer{
         grid-area: about-photo;
         height: 100%;
         width: 28vw;
-        border-radius: 5px;
+        border-radius: 10px;
     }
     .about-texts{grid-area: about-texts; font-size: 1.6vw; width: 100%; margin: 0;}
     #about-containerheader{display: none; }
@@ -417,9 +424,7 @@ footer{
           "name"
           "stars"
           "description"; 
-        justify-content: center; 
-        justify-items: center; 
-        align-items: center; 
+          border-radius: 10px;
       }
       .avatar {height: 7vw; margin: 5vh 0 0 0;}
       .name {font-size: 2vw; margin: 4vh 0 3vh 0;}

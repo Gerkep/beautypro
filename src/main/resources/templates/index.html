@@ -12,7 +12,7 @@
     </head>
     <body>
         <div class="navbar">
-            <a class="nav-link" th:href="@{/transformations}"><b>portfolio</b></a>
+            <a class="nav-link" th:href="@{/pricing}"><b>portfolio</b></a>
             <a class="nav-link" href="#"><b>about</b></a>
             <img class="nav-img" src="../images/logo-beauty.PNG">
             <a class="nav-link" th:href="@{/pricing}"><b>offer</b></a>
@@ -82,19 +82,19 @@
             <div class="container-header">
                 <h2 class="header">OPINIONS</h2>
             </div>
-            <div class="opinions">
+            <div class="opinions" id="opinions">
                 <div class="opinion-container">
                     <img class="avatar" src="../images/avatar1.png">
                     <h4 class="name">TRUDY WILSON</h4>
                     <img class="stars" src="../images/stars.png">
-                    <p class="description">I’ve loved going to Beauty Pro Aesthetics Clinic , Paulina is so professional, talks me through every treatment, her advise<b >...read more</b></p>
+                    <p class="description">I’ve loved going to Beauty Pro Aesthetics Clinic , Paulina is so professional, talks me through every treatment, her advise</p>
                 </div>
                 
                 <div class="opinion-container">
                     <img class="avatar" src="../images/avatar2.png">
                     <h4 class="name">EWA PIWONSKA</h4>
                     <img class="stars" src="../images/stars.png">
-                    <p class="description">I am impressed with Paulina's knowledge, professionalism and how well she interpreted my skin needs and wishes. It was<b> ...read more</b></p>
+                    <p class="description">I am impressed with Paulina's knowledge, professionalism and how well she interpreted my skin needs and wishes. It was</p>
                 </div>
                 <div class="opinion-container">
                     <img class="avatar" src="../images/avatar3.png">
@@ -102,8 +102,25 @@
                     <img class="stars" src="../images/stars.png">
                     <p class="description">Paulina is very professional and makes you feel at ease. She did my lips natural exactly how I wanted them. Would recommend 100%.</p>
                 </div>
-              
-                <a class="more-opinions" href="#">More...</a>
+                 <button class="more-opinions" id="more-btn" onclick="showMore()">More...</button>
+                <div class="opinion-container">
+                    <img class="avatar" src="../images/avatar3.png">
+                    <h4 class="name">JANE STOCKILL</h4>
+                    <img class="stars" src="../images/stars.png">
+                    <p class="description">Paulina is very professional and makes you feel at ease. She did my lips natural exactly how I wanted them. Would recommend 100%.</p>
+                </div>
+                <div class="opinion-container">
+                    <img class="avatar" src="../images/avatar3.png">
+                    <h4 class="name">JANE STOCKILL</h4>
+                    <img class="stars" src="../images/stars.png">
+                    <p class="description">Paulina is very professional and makes you feel at ease. She did my lips natural exactly how I wanted them. Would recommend 100%.</p>
+                </div>
+                <div class="opinion-container">
+                    <img class="avatar" src="../images/avatar3.png">
+                    <h4 class="name">JANE STOCKILL</h4>
+                    <img class="stars" src="../images/stars.png">
+                    <p class="description">Paulina is very professional and makes you feel at ease. She did my lips natural exactly how I wanted them. Would recommend 100%.</p>
+                </div>
             </div>
         </div>
 
@@ -140,5 +157,7 @@
                 </div>
             </div>
         </footer>
+        <script src="../js/pricingAnimation.js"></script>
+        <script src="../js/moreOpinions.js"></script>
     </body>
 </html>

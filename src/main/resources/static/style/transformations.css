@@ -13,10 +13,22 @@
     z-index: 100;
     width: 100%;
     position: fixed;
-    font-size: 4vw;
 }
+.carousel{display: none;}
 .page-title{
     text-align: center;
+    font-size: 8vw;
+}
+.back-btn{
+    position: fixed;
+    top: 80vh;
+    right: 5vw;
+    border-radius: 50%;
+    height: 15vw;
+    width: 15vw;
+    border: none;
+    background-color: #00293aff;
+    box-shadow: 2px 10px 24px rgba(0, 0, 0, 0.267);
 }
 .transformations{
     display: flex;
@@ -25,7 +37,7 @@
     flex-wrap: wrap;
 }
 #first-transformation{
-    margin-top: 12vh;
+    margin-top: 16vh;
 }
 .transformation{
     height: 68vw;
@@ -38,4 +50,43 @@
     transition: 1s ease;
     transform: scale(1.08);
     box-shadow: 0px 24px 40px rgba(0, 0, 0, 0.267);
+}
+@media(min-width:1200px){
+    #mobile-transformations{display: none;}
+    .page-header{
+        padding: 2vh 0 2vh;
+        font-size: 2vw;
+        border-bottom-left-radius: 56%;
+        border-bottom-right-radius: 56%;
+    }
+    .background{
+        width: 90%;
+        height: 90%;
+        background-image: url("../images/background-transformations.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+    }
+    .carousel, .carousel-inner, .carousel-item{display: block; height: 80vh; width: 50vw; margin: 0 auto;}
+    .carousel{margin-top: 17vh;}
+    .carousel-inner{border-radius: 30px;}
+    .back-btn{
+        top: 85vh;
+        right: 5vw;
+        height: 5vw;
+        width: 5vw;
+    }
+    .transformations{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+    .transformation{
+        height: 34vw;
+        width: 40vw;
+        margin: 20vh 5vh 0 5vh;
+    }
 }
