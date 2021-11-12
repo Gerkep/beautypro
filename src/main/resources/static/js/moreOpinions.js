@@ -1,12 +1,14 @@
-const showButton = document.getElementById("more-btn");
-const hideButton = document.getElementById("hide-btn");
-const container = document.getElementById("opinions");
+const showButton = document.getElementById("more-opinions-btn");
+const hideButton = document.getElementById("hide-opinions-btn");
+const moreOpinions = document.getElementById("more-opinions");
 
 function showMore(){
     showButton.style.display = "none";
-    container.classList.toggle('show')
+    moreOpinions.style.display = "flex";
+    hideButton.style.display = "flex";
 }
 function hideOpinions(){
     showButton.style.display = "block";
-    container.classList.remove('show');
+    moreOpinions.style.display = "none";
+    hideButton.style.display = "none";
 }
