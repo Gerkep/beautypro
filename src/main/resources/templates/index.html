@@ -3,7 +3,7 @@
     <head>
         <title>BeautyPro</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="../style/main.css">
+        <link rel="stylesheet" href="../static/style/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400" rel="stylesheet">
@@ -14,7 +14,7 @@
         <div class="navbar">
             <a class="nav-link" th:href="@{/pricing}"><b>portfolio</b></a>
             <a class="nav-link" href="#"><b>about</b></a>
-            <img class="nav-img" src="../images/logo-beauty.PNG">
+            <img class="nav-img" src="../static/images/logo-beauty.PNG">
             <a class="nav-link" th:href="@{/pricing}"><b>offer</b></a>
             <a class="nav-link" href="#"><b>contact</b></a>
         </div>
@@ -24,57 +24,62 @@
                 <h3 class="slogan-small">Thanks to professionally performed<br> anti aging treatments!</h3>
                 <button class="cta-btn"><b>Book now</b></button>
             </div>
-            <img class="main-photo" src="../images/illustration_paulina.png">
+            <img class="main-photo" src="../static/images/illustration_paulina.png">
         </div>
         <div class="container navy-container" id="treatments-container">
             <div class="container-header">
                 <h2 class="header">TREATMENTS</h2>
             </div>
             <div class="treatments">
-                <a href="" class="treatment"><img class="treatment-img" src="../images/anti_wrinkle.png"><p class="treatment-txt">Botox injections</p></a>
-                <a href="" class="treatment"><img class="treatment-img" src="../images/sweat.png"><p class="treatment-txt">Sweating hyperhidosis</p></a>
-                <a href="" class="treatment"><img class="treatment-img" src="../images/tooth.png"><p class="treatment-txt">Teeth grinding</p></a>
-                <a href="" class="treatment"><img class="treatment-img" src="../images/face.png"><p class="treatment-txt">Facials</p></a>
-                <a href="" class="treatment"><img class="treatment-img" src="../images/mouth.png"><p class="treatment-txt">Dermal filters</p></a>
-                <a href="" class="treatment"><img class="treatment-img" src="../images/skin.png"><p class="treatment-txt">Skin boosters</p></a>
-                <a href="" class="treatment"><img class="treatment-img" src="../images/scale.png"><p class="treatment-txt">Weight managment</p></a>
-                <a href="" class="treatment"><img class="treatment-img" src="../images/injection.png"><p class="treatment-txt">Vitamin injections</p></a>
+                <a href="" class="treatment"><img class="treatment-img" src="../static/images/anti_wrinkle.png"><p class="treatment-txt">Botox injections</p></a>
+                <a href="" class="treatment"><img class="treatment-img" src="../static/images/sweat.png"><p class="treatment-txt">Sweating hyperhidosis</p></a>
+                <a href="" class="treatment"><img class="treatment-img" src="../static/images/tooth.png"><p class="treatment-txt">Teeth grinding</p></a>
+                <a href="" class="treatment"><img class="treatment-img" src="../static/images/face.png"><p class="treatment-txt">Facials</p></a>
+                <a href="" class="treatment"><img class="treatment-img" src="../static/images/mouth.png"><p class="treatment-txt">Dermal filters</p></a>
+                <a href="" class="treatment"><img class="treatment-img" src="../static/images/skin.png"><p class="treatment-txt">Skin boosters</p></a>
+                <a href="" class="treatment"><img class="treatment-img" src="../static/images/scale.png"><p class="treatment-txt">Weight managment</p></a>
+                <a href="" class="treatment"><img class="treatment-img" src="../static/images/injection.png"><p class="treatment-txt">Vitamin injections</p></a>
             </div>
         </div>
 
         <div class="container white-container" id="clinic-container">
             <div class="container-header">
-                <h2 class="header" id="clinic-header">MY CLINIC</h2>
+                <h2 class="header">ABOUT OUR CLINIC</h2>
             </div>
-            <div class="clinic">
-                <h3 class="header-desktop">MY CLINIC</h3>
-                <div class="aboutclinic-desktop">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p><br><br>
-                    <p>Ut enim ad miniiquip ex ea commodo consequat. Duis auderit in voluptate velit esse cillum dolore eu fugiat
-                        Ut enim ad miniiquip ex ea commodo consequat. Duis auderit in voluptate velit esse cillum dolore eu fugiat
-                    </p>
-                 </div>
-                 <div class="clinic-img">
-                    <div class="clinic-about">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p><br><br>
-                        <p>Ut enim ad miniiquip ex ea commodo consequat. Duis auderit in voluptate velit esse cillum dolore eu fugiat</p>
-                    </div>
-                </div>
+            <img class="clinic-img" src="../static/images/clinic-img.jpeg">
+            <div class="about-text">
+                <p>
+                    BeautyPro is a pharmacist led, non-surgical medical Aesthetics Clinic which provides a range of treatments including anti – aging treatment, injected fillers, facial peels, dermal fillers, and a selection of cosmeceutical skincare.<button onclick="viewMoreClinic()" class="more-btn" id="more-clinic-btn"><b>...read more</b></button><br><br>
+                    <p id="more-clinic-text">
+                        We are committed to delivering a high quality and bespoke service to all patients from consultation right through to treatment and aftercare.
+                        Every treatment and product available to our clients, including prescription only treatments, has been chosen based on their safety, efficacy, and clinically proven results.<br><br>
+                        Our mission is to provide our clients with the best possible care to restore and rejuvenate their skin. 
+                        We believe in offering natural looking results that will help our clients match their appearance with how they really feel on the inside.
+                    </p> 
+                    <div class="button-container" id="hide-clinic-container">
+                        <button onclick="hideMoreClinic()" class="hide-btn" id="hide-clinic-btn"><img class="btn-img" src="../static/images/hide-button.png"></button>
+                   </div>
+                </p>
             </div>
         </div>
 
         <div class="container navy-container" id="about-container">
-            <div class="container-header" id="about-containerheader">
-                <h2 class="header">ABOUT ME</h2>
+            <div class="container-header">
+                <h2 class="header">OUR PRACTITIONER</h2>
             </div>
-            <div class="about">
-                <h3 class="header-desktop" id="story-header">ABOUT ME</h3>
-                <img class="about-photo" src="../images/image3.jpeg">
-                <div class="about-texts">
-                <p class="about-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. </p><br><br>
-                <p>Here are transformations of my clients:<br><button class="transformations-btn">></button></p>
-            </div>
-
+            <div class="about-photo"></div>
+            <div class="about-text">
+                <p>
+                    All treatments are provided by <b>Paulina Halagiera</b>, our founder and director, who is a medically Qualified Practitioner (currently working towards Level 7 qualifications) and an Independent Prescribing Pharmacist.<br><br> 
+                    Her passion for aesthetic medicine and constant desire to improve her knowledge of skincare ensures that she stays up to date in the dynamic skincare world and its latest technologies<button onclick="viewMoreAbout()" class="more-btn" id="more-about-btn"><b>...read more</b></button><br><br> 
+                </p>
+                <p id="more-about-text">
+                    Paulina takes pride in delivering excellent customer service whilst performing bespoke aesthetic treatments. Paulina is professional, approachable, and sure to make clients secure, confident and at ease in her hands.
+                    <br><br>“It is and honour for me to help my clients match their look with what they really feel on the inside, to improve their skin and the way they feel about themselves, to boost their confidence and with that they can better their opportunities in life.”
+                    <div class="button-container" id="hide-about-container">
+                         <button onclick="hideMoreAbout()" class="hide-btn" id="hide-about-btn"><img class="btn-img" src="../static/images/hide-button.png"></button>
+                    </div>
+                </p>
             </div>
         </div>
 
@@ -84,43 +89,50 @@
             </div>
             <div class="opinions" id="opinions">
                 <div class="opinion-container">
-                    <img class="avatar" src="../images/avatar1.png">
+                    <img class="avatar" src="../static/images/avatar-1.png">
                     <h4 class="name">TRUDY WILSON</h4>
-                    <img class="stars" src="../images/stars.png">
+                    <img class="stars" src="../static/images/stars.png">
                     <p class="description">I’ve loved going to Beauty Pro Aesthetics Clinic , Paulina is so professional, talks me through every treatment, her advise</p>
                 </div>
                 
                 <div class="opinion-container">
-                    <img class="avatar" src="../images/avatar2.png">
+                    <img class="avatar" src="../static/images/avatar2.png">
                     <h4 class="name">EWA PIWONSKA</h4>
-                    <img class="stars" src="../images/stars.png">
+                    <img class="stars" src="../static/images/stars.png">
                     <p class="description">I am impressed with Paulina's knowledge, professionalism and how well she interpreted my skin needs and wishes. It was</p>
                 </div>
                 <div class="opinion-container">
-                    <img class="avatar" src="../images/avatar3.png">
+                    <img class="avatar" src="../static/images/avatar3.png">
                     <h4 class="name">JANE STOCKILL</h4>
-                    <img class="stars" src="../images/stars.png">
+                    <img class="stars" src="../static/images/stars.png">
                     <p class="description">Paulina is very professional and makes you feel at ease. She did my lips natural exactly how I wanted them. Would recommend 100%.</p>
                 </div>
                  <button class="more-opinions" id="more-btn" onclick="showMore()">More...</button>
                 <div class="opinion-container">
-                    <img class="avatar" src="../images/avatar3.png">
-                    <h4 class="name">JANE STOCKILL</h4>
-                    <img class="stars" src="../images/stars.png">
+                    <img class="avatar" src="../static/images/avatar4.png">
+                    <h4 class="name">SOPHIE G Bower</h4>
+                    <img class="stars" src="../static/images/stars.png">
                     <p class="description">Paulina is very professional and makes you feel at ease. She did my lips natural exactly how I wanted them. Would recommend 100%.</p>
                 </div>
                 <div class="opinion-container">
-                    <img class="avatar" src="../images/avatar3.png">
-                    <h4 class="name">JANE STOCKILL</h4>
-                    <img class="stars" src="../images/stars.png">
+                    <img class="avatar" src="../static/images/avatar5.png">
+                    <h4 class="name">DIANNE DALEY</h4>
+                    <img class="stars" src="../static/images/stars.png">
                     <p class="description">Paulina is very professional and makes you feel at ease. She did my lips natural exactly how I wanted them. Would recommend 100%.</p>
                 </div>
                 <div class="opinion-container">
-                    <img class="avatar" src="../images/avatar3.png">
-                    <h4 class="name">JANE STOCKILL</h4>
-                    <img class="stars" src="../images/stars.png">
+                    <img class="avatar" src="../static/images/avatar6.png">
+                    <h4 class="name">KINGA KOCIKOWSKA</h4>
+                    <img class="stars" src="../static/images/stars.png">
                     <p class="description">Paulina is very professional and makes you feel at ease. She did my lips natural exactly how I wanted them. Would recommend 100%.</p>
                 </div>
+                <div class="opinion-container">
+                    <img class="avatar" src="../static/images/avatar7.png">
+                    <h4 class="name">CAROLINE RUGGIERO</h4>
+                    <img class="stars" src="../static/images/stars.png">
+                    <p class="description">Paulina is very professional and makes you feel at ease. She did my lips natural exactly how I wanted them. Would recommend 100%.</p>
+                </div>
+                <button class="less-opinions" id="hide-btn" onclick="hideOpinions()">Hide</button>
             </div>
         </div>
 
@@ -136,7 +148,7 @@
         </div>
 
         <footer>
-            <img class="footer-logo" src="../images/beautypro_navy.png">
+            <img class="footer-logo" src="../static/images/beautypro_navy.png">
             <div class="social-media">
                 <a href="https://www.facebook.com/profile.php?id=100011194814784" class="media-logo" id="facebook"></a>
                 <a href="https://www.instagram.com/gerke.p/" class="media-logo" id="insta"></a>
@@ -157,7 +169,8 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/pricingAnimation.js"></script>
-        <script src="../js/moreOpinions.js"></script>
+        <script src="../static/js/pricingAnimation.js"></script>
+        <script src="../static/js/moreOpinions.js"></script>
+        <script src="../static/js/moreDescriptions.js"></script>
     </body>
 </html>

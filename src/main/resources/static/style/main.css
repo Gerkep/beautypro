@@ -39,10 +39,11 @@ a{
     grid-template-areas:
       "welcome-text main-photo";
       margin-top: 2rem;
+      overflow: hidden;
   }
   .welcome-text {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 20vw 20vw 20vw;
     grid-auto-flow: row;
     grid-template-areas:
       "slogan"
@@ -56,12 +57,12 @@ a{
   .slogan { grid-area: slogan; font-size: 5.5vw; font-family: 'Montserrat', sans-serif;
  font-weight: 400; font-weight: 600;}
   
-  .slogan-small { grid-area: slogan-small;font-size: 3.2vw;   font-family: 'Lora', serif; font-weight: 100;}
+  .slogan-small { grid-area: slogan-small;font-size: 3.4vw;   font-family: 'Lora', serif; font-weight: 100;}
   
   .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 18px; border: none; background-color: #00293aff; color: rgb(255, 255, 255);   font-family: 'Montserrat', sans-serif;
  font-weight: 400; font-size: 4vw; font-weight: 500;}
   
-  .main-photo { grid-area: main-photo; width: 220%; margin: 6vh 0 0 -28vw; z-index: -1;}
+  .main-photo { grid-area: main-photo; width: 220%; margin: 4vh 0 0 -23vw; z-index: -1;}
 
 .navy-container{
     background-color: #00293aff; color: white;
@@ -69,13 +70,12 @@ a{
 }
 .white-container{
     background-color: rgb(255, 255, 255);
-    padding: 8vw 0 20vw 0;
 }
 .container{
     width: 100%;
-    border-radius: 30px;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 30px;
 }
 .container-header{
     width: 100%;
@@ -87,9 +87,8 @@ a{
     font-weight: 400;
     margin-bottom: 8vw;
 }
-.header-desktop{display: none;}
 .header{float: left; margin: 1rem 4vw 1rem;}
-#treatments-container{padding: 3vw 0 10vw 0; z-index: 100;}
+#treatments-container{padding: 3vw 0 10vw 0; z-index: 100;    box-shadow: 0px 12px 20px rgba(0, 41, 58, 0.267);}
 .treatments{display: flex; flex-wrap: wrap; justify-content: center; width: 100%; height: auto;}
 .treatment{
     width: 18vw;
@@ -99,7 +98,6 @@ a{
     border-radius: 12px;
     margin: 1vw 2vw 1vw 2vw;
     display: grid; 
-    grid-template-columns: 1fr; 
     grid-template-rows: 65% 35%; 
     gap: 0px 0px; 
     grid-template-areas: 
@@ -117,53 +115,62 @@ a{
     max-width: 60%;
 }
 .treatment-txt { grid-area: treatment-txt;  font-family: 'Lora', serif; text-align: center; color: white;}
-.clinic-img{
-    width: 90vw;
-    height: 67vw;
-    background-image: url("../images/image0.jpeg");
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    border-radius: 8px;
+#clinic-container{
+    display: grid; 
+    grid-template-rows: 30vw 65vw auto; 
+    grid-template-areas: 
+      "container-header"
+      "clinic-img"
+      "about-text"; 
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center; 
+    padding-bottom: 6vw;
     overflow: hidden;
-    box-shadow: 4px 24px 40px #6d6dad65;
+    margin: 15vw 0 15vw 0;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.171), 0 -12px 24px rgba(0, 0, 0, 0.178);
 }
-.clinic{margin: 0 auto}
-.clinic-about{
-    padding: 8% 5% 8% 5%;
-    width: 34%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.555);
+.clinic-img{grid-area: clinic-img; height: 65vw; border-radius: 20px;}
+#more-clinic-text{display: none;}
+#hide-clinic-container{display: none;}
+.hide-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.more-btn{
+    background-color: transparent; border: none;
+    cursor: pointer;
+}
+.button-container{
+    display: flex; width: 100%; justify-content: center; margin-top: 10vw;
+}
+#about-container{
+    display: grid; 
+    grid-template-rows: 30vw 87vw auto; 
+    grid-template-areas: 
+      "container-header"
+      "about-photo"
+      "about-text"; 
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center; 
+    padding-bottom: 6vw;
+}
+.container-header { grid-area: container-header;}
+.about-photo { grid-area: about-photo; height: 87vw; width: 65vw; background-image: url("../images/practitioner.jpeg"); background-size: cover; border-radius: 20px;}
+.about-text { grid-area: about-text; margin: 8vw 6vw 1rem;}
+#more-about-text{
+    display: none;
+}
+#more-about-btn{
     color: white;
-    font-size: 2.8vw;   font-family: 'Lora', serif;
 }
-.about{display: flex; padding: 0 5% 0 4vw; width: 90%;} 
-.aboutclinic-desktop{display: none;}
-.about-photo{
-    width: 41vw;
-    height: 55vw;
-    border-radius: 5px;
+#hide-about-btn{
+    filter: brightness(0) invert(1);
 }
-.about-texts{
-    width: 45%;
-    height: 20vh;
-    font-size: 3vw;
-    margin-left: 10%;
-      font-family: 'Lora', serif;
-}
-.transformations-btn{
-    border-radius: 50%;
-    height: 8vw;
-    width: 8vw;
-    padding-left: 0.7vw;
-    border: white solid 2px;
-    background-color: rgba(0, 41, 58, 0);
-    color: white;
-    font-size: 5vw;
-    float: right;
-    margin-top: 1rem 3rem 0 0;
-    text-align: center;
-}
+#hide-about-container{display: none;}
+.btn-img{height: 10vw;}
 .opinions{
     width: 100%; 
     display: flex; 
@@ -173,7 +180,7 @@ a{
     overflow: hidden;
     padding-bottom: 3vw;
 }
-
+.opinions.show{height: auto;}
 .opinion-container{
     margin: 0 auto; 
     width: 80vw; 
@@ -196,7 +203,7 @@ a{
   }
   .opinion-container.active{opacity: 1; transition: all 1s ease; transform: scale(1.04);}
   #more{display: none;}
- #more-btn{background-color: transparent; border: none; font-size: 4vw;}
+ #more-btn, #hide-btn{background-color: transparent; border: none; font-size: 4vw; margin: 4vw 30% 0 30%;}
   .avatar { grid-area: avatar; height: 17vw; margin-left: 0.8vw;}
   .name { grid-area: name; overflow: hidden; font-size: 4vw; margin-left: 0.4vw;   font-family: 'Montserrat', sans-serif;
  font-weight: 400;}
@@ -209,8 +216,9 @@ a{
     background-color: transparent; border: none;
 }
 #contact-container{
-    border-bottom-right-radius: 0px;
+    margin-top: 20vw;
     border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }   
 .contact-form{
     display: flex;
@@ -320,9 +328,9 @@ footer{
         height: 8vw;
     }
     .welcome-container{
-        height: 59vh; 
-        margin-top: 20vh; 
-        grid-auto-rows: 24vh 24vh;
+        height: 79vh; 
+        margin-top: 0vh; 
+        grid-auto-rows: 64vh 24vh;
         grid-template-columns: 1.5fr 0.5fr 0.1fr;
         grid-template-areas:
       "welcome-text main-photo side-text";
@@ -342,6 +350,8 @@ footer{
       padding-left: 6vw;
       align-items: center;
       grid-gap: 3vh;
+      grid-template-rows: 1fr 1fr 1fr;
+      
     }
     .white-container{padding: 10vh 0 15vh 0;}
     .navy-container{padding: 0;}
@@ -360,64 +370,14 @@ footer{
         margin: 0.5vw 1vw 0.5vw 1vw;
         font-size: 1vw;
     }
-    .clinic-img{
-        grid-area: clinic-img; 
-        width: 34vw;
-        height: 25vw;
-        margin: 0 auto;
-    }
-    .clinic-about{
-        display: none;
-    }
-    .header-desktop{grid-area: header-desktop; display: block; margin-top: 3vh; font-size: 3vw;   font-family: 'Montserrat', sans-serif;
- font-weight: 400;}
-    #clinic-header{display: none;}
-    .aboutclinic-desktop{display: block; grid-area: aboutclinic-desktop; font-size: 1.5vw;}
-    .clinic{
-        width: 80%; 
-        padding: 6vh 4vh 6vh 4vh; 
-        border-radius: 20px; 
-        box-shadow: 4px 24px 40px #6d6dad65; 
-        margin: 0 auto;
-        display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 30% 70%; 
-  grid-template-areas: 
-    "header-desktop clinic-img"
-    "aboutclinic-desktop clinic-img"; 
-    }
-    #story-header{margin-top: 8vh;}
-    .about{
-        height: 70vh;
-        display: grid; 
-        grid-template-columns: 40% 60%; 
-        grid-template-rows: 30% 70%; 
-        grid-template-areas: 
-          "about-photo header-desktop"
-          "about-photo about-texts"; 
-    }
-    .about-photo{
-        grid-area: about-photo;
-        height: 100%;
-        width: 28vw;
-        border-radius: 10px;
-    }
-    .about-texts{grid-area: about-texts; font-size: 1.6vw; width: 100%; margin: 0;}
-    #about-containerheader{display: none; }
-    .transformations-btn{
-        height: 6vw;
-        width: 6vw;
-        padding-left: 0.7vw;
-        border: white solid 4px;
-        font-size: 5vw;
-        margin: 2vh 2vw 0 0vw;
-    }
+
+    .opinions{height: 80vh;}
     .opinion-container{
-        width: 20vw; 
-        height: 25vw;
+        width: 18vw; 
+        height: 24vw;
         margin: 4vw 4vw 4vw 4vw; 
         grid-template-columns: 1fr; 
-        grid-template-rows: 40% 15% 10% 35%; 
+        grid-template-rows: 30% 25% 10% 40%; 
         gap: 0px 0px; 
         grid-template-areas: 
           "avatar"
@@ -427,14 +387,14 @@ footer{
           border-radius: 10px;
       }
       .avatar {height: 7vw; margin: 5vh 0 0 0;}
-      .name {font-size: 2vw; margin: 4vh 0 3vh 0;}
+      .name {font-size: 1.6vw; margin: 4vh 0 0 0; text-align: center;}
       .description {font-size: 1.2vw; margin: 1vh 0 0 0; text-align: center;}
       .stars { grid-area: stars; width: 10vw;}
-      .more-opinions{font-size: 2vw;}
+      #more-btn{font-size: 2vw; margin: 3vw 40% 0 40%;}
       #contact-container{
           width: 80%;
           margin: 0 auto;
-          padding: 6vh 0 6vh 0;
+          padding: 10vh 0 10vh 0;
           margin-bottom: 14vh;
           border-bottom-right-radius: 30px;
           border-bottom-left-radius: 30px;
