@@ -87,7 +87,6 @@ a{
 .container-header h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    margin-bottom: 8vw;
 }
 .header{float: left; margin: 1rem 4vw 1rem;}
 #treatments-container{padding: 3vw 0 10vw 0; z-index: 100;    box-shadow: 0px 12px 20px rgba(0, 41, 58, 0.267);}
@@ -120,7 +119,7 @@ a{
 .treatment-txt { grid-area: treatment-txt;  font-family: 'Lora', serif; text-align: center; color: white;}
 #clinic-container{
     display: grid; 
-    grid-template-rows: 30vw 65vw auto; 
+    grid-template-rows: 25vw 65vw auto; 
     grid-template-areas: 
       "container-header"
       "clinic-img"
@@ -149,8 +148,9 @@ a{
     display: flex; width: 100%; justify-content: center; margin-top: 10vw;
 }
 #about-container{
+    padding-top: 0;
     display: grid; 
-    grid-template-rows: 14vw 70vw auto; 
+    grid-template-rows: 25vw 65vw auto; 
     grid-template-areas: 
       "container-header"
       "about-photo"
@@ -162,7 +162,7 @@ a{
 }
 .container-header { grid-area: container-header;}
 .about-photo { grid-area: about-photo; height: 65vw; width: 87vw; box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239); background-image: url("../images/practitioner.jpg"); background-size: cover; border-radius: 20px;}
-.about-text { grid-area: about-text; margin: 8vw 6vw 1rem;}
+.about-text { grid-area: about-text; padding: 8vw 6vw 1rem;}
 #more-about-text{
     display: none;
 }
@@ -174,12 +174,13 @@ a{
 }
 #hide-about-container{display: none;}
 .btn-img{height: 10vw;}
+#opinions-header{padding: 5vw 0 0 0vw;}
 .opinions{
     width: 100%; 
+    height: auto;
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center;
-    height: 120vw;
     overflow: hidden;
     padding-bottom: 3vw;
 }
@@ -224,6 +225,7 @@ a{
     border-bottom-right-radius: 0px;
 }   
 .contact-form{
+    margin-top: 5vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -356,12 +358,14 @@ footer{
       grid-template-rows: 1fr 1fr 1fr;
       
     }
-    .white-container{padding: 10vh 0 15vh 0;}
+    .white-container{padding: 0}
     .navy-container{padding: 0;}
     .container-header h2{
         margin-bottom: 2vw;
         font-size: 3vw;
     }
+    .header{float: left; margin: 1rem 0vw 1rem;}
+    #treatments-header{padding: 0 0 0 4vw;}
     #treatments-container{
         padding: 2vw 0 5vw 0;
     }
@@ -373,6 +377,36 @@ footer{
         margin: 0.5vw 1vw 0.5vw 1vw;
         font-size: 1vw;
     }
+    #clinic-container{
+        display: grid; 
+        grid-template-rows: 10vw 25vw auto; 
+        grid-template-columns: 40vw 50vw; 
+        grid-template-areas: 
+          "container-header about-text"
+          "clinic-img about-text"; 
+        margin: 5vw 0 5vw 0;
+    }
+
+    .clinic-img{height: 30vw; width: 40vw; margin-top: 5vh; margin-left: 2vw;}
+    #more-clinic-text{display: inline !important;}
+    .more-btn{
+        display: none !important;
+    }
+    .about-text {font-size: 1.45vw; border-left: solid 2px rgba(0, 41, 58, 0.5); padding: 0vw 2vw 1rem; margin: 9vw 0 0 4vw}
+    #about-container{
+        grid-template-rows: 10vw 15vw 15vw; 
+        grid-template-columns: 50vw 40vw; 
+        grid-template-areas: 
+          "container-header container-header"
+          "about-text about-photo"
+          "about-text about-photo"; 
+    }
+    .about-photo { grid-area: about-photo; height: 30vw; width: 40vw;}
+    #about-practitioner-text{padding: 0 2vw 0 0; margin: 1vh 4vw 0 0;border-right: solid 2px rgba(255, 255, 255, 0.5);}
+    #more-about-text{display: inline;}
+    .btn-img{height: 3vw;}
+    #opinions-header{padding: 5vw 0 0 5vw;}
+    #hide-opinions-btn{margin: 2vh 48% 8vh 48%;}
     .opinion-container{
         width: 18vw; 
         height: 24vw;
@@ -391,7 +425,7 @@ footer{
       .name {font-size: 1.6vw; margin: 4vh 0 0 0; text-align: center;}
       .description {font-size: 1.2vw; margin: 1vh 0 0 0; text-align: center;}
       .stars { grid-area: stars; width: 10vw;}
-      #more-opinions-btn{font-size: 2vw; margin: 3vw 40% 0 40%;}
+      #more-opinions-btn{font-size: 2vw; margin: 1vw 40% 5vw 40%;}
       #contact-container{
           width: 80%;
           margin: 0 auto;
