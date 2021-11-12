@@ -142,10 +142,10 @@
             <div class="container-header">
                 <h2 class="contact-header">LET'S KEEP IN TOUCH!</h2>
             </div>
-            <form class="contact-form">
-                <input class="input" id="email-input" type="email" placeholder="Email">
-                <textarea class="input" id="message-input" placeholder="Message..."></textarea>
-                <button class="send-btn">Send</button>
+            <form autocomplete="off" th:action="@{/send}" method="POST" class="contact-form">
+                <input class="input" id="email-input" type="email" th:field="${mail.sender}" placeholder="Email">
+                <textarea class="input" id="message-input" th:field="${mail.text}" placeholder="Message..."></textarea>
+                <button class="send-btn" type="submit">Send</button>
             </form>
         </div>
 
