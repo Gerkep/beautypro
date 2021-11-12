@@ -17,8 +17,7 @@ public class EmailService {
         Content content = new Content("text/plain", email.getSender() + "\n" + email.getText());
         Mail mail = new Mail(from, subject, to, content);
         Response respons = null;
-        SendGrid sg = new SendGrid(
-                System.getenv("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"));
+        SendGrid sg = new SendGrid(System.getenv("SENDGRID_API_KEY"));
         Request request = new Request();
         try {
             request.setMethod(Method.POST);
