@@ -6,6 +6,7 @@ a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.705);
 }
+
 .navbar{
     display: flex;
     flex-wrap: nowrap;
@@ -62,7 +63,7 @@ a{
   .slogan-small { grid-area: slogan-small;font-size: 3.4vw;   font-family: 'Lora', serif; font-weight: 100;}
   
   .cta-btn { grid-area: cta-btn; box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239); margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 18px; border: none; background-color: #00293aff; color: rgb(255, 255, 255);   font-family: 'Montserrat', sans-serif;
- font-weight: 400; font-size: 4vw; font-weight: 500;}
+ font-weight: 400; font-size: 4vw; font-weight: 500; display: flex; justify-content: center; align-items: center;}
   
   .main-photo { grid-area: main-photo; width: 220%; margin: 4vh 0 0 -23vw; z-index: -1;}
 
@@ -143,6 +144,7 @@ a{
 .more-btn{
     background-color: transparent; border: none;
     cursor: pointer;
+    color: black;
 }
 .button-container{
     display: flex; width: 100%; justify-content: center; margin-top: 10vw;
@@ -342,7 +344,7 @@ footer{
         align-items: center;
     }
       .nav-link{
-        font-size: 1.6vw;
+        font-size: 2vw;
         margin: 0 4vw 0 4vw;
         font-weight: 100; font-family: 'Lora', serif;
       }

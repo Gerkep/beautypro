@@ -15,6 +15,10 @@
 	<description>Aesthetic clinic website</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<bootstrap.version>4.0.0-2</bootstrap.version>
+        <webjars-locator.version>0.30</webjars-locator.version>
+        <lombok.version>1.18.2</lombok.version>
+        <commonmark.version>0.13.1</commonmark.version>
 	</properties>
 	<dependencies>
 		<dependency>

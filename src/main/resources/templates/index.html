@@ -12,17 +12,17 @@
     </head>
     <body>
         <div class="navbar">
-            <a class="nav-link" th:href="@{/pricing}">portfolio</a>
-            <a class="nav-link left-link" href="#">about</a>
+            <a class="nav-link" th:href="@{/transformations}">portfolio</a>
+            <a class="nav-link left-link" href="#clinic-container">about</a>
             <img class="nav-img" src="../images/logo-beauty.PNG">
             <a class="nav-link right-link" th:href="@{/pricing}">offer</a>
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link" href="#contact-container">contact</a>
         </div>
         <div class="welcome-container">
             <div class="welcome-text">
                 <h1 class="slogan">DISCOVER THE MORE<br> <p class="outstanding-txt">ATTRACTIVE YOU</p></h1>
                 <h3 class="slogan-small">Thanks to professionally performed<br> anti aging treatments!</h3>
-                <button class="cta-btn"><b>Book now</b></button>
+                <a href="#contact-container" class="cta-btn"><b>Book now</b></a>
             </div>
             <img class="main-photo" src="../images/illustration_paulina.png">
         </div>
@@ -34,7 +34,7 @@
                 <a href="" class="treatment"><img class="treatment-img" src="../images/anti_wrinkle.png"><p class="treatment-txt">Botox injections</p></a>
                 <a href="" class="treatment"><img class="treatment-img" src="../images/sweat.png"><p class="treatment-txt">Sweating hyperhidosis</p></a>
                 <a href="" class="treatment"><img class="treatment-img" src="../images/tooth.png"><p class="treatment-txt">Teeth grinding</p></a>
-                <a href="" class="treatment"><img class="treatment-img" id="face" src="../images/face.png"><p class="treatment-txt">Facials</p></a>
+                <a href="https://beauty-pro.herokuapp.com/pricing#facials" class="treatment"><img class="treatment-img" id="face" src="../images/face.png"><p class="treatment-txt">Facials</p></a>
                 <a href="" class="treatment"><img class="treatment-img" src="../images/mouth.png"><p class="treatment-txt">Dermal filters</p></a>
                 <a href="" class="treatment"><img class="treatment-img" src="../images/skin.png"><p class="treatment-txt">Skin boosters</p></a>
                 <a href="" class="treatment"><img class="treatment-img" src="../images/scale.png"><p class="treatment-txt">Weight managment</p></a>
