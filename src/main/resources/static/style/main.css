@@ -28,8 +28,8 @@ a{
     background-color: #00293aff;
     border-radius: 5px;
 }
-.right-link{padding-left: 0vh; margin-left: -1vw;}
-.left-link{padding-right: 0; margin-right: -1vw;}
+.right-link{margin-left: -1vw;}
+.left-link{margin-right: -1vw;}
 .nav-img{
     height: 17vw;
     margin: 0 1rem 0 1rem;
@@ -61,7 +61,7 @@ a{
   
   .slogan-small { grid-area: slogan-small;font-size: 3.4vw;   font-family: 'Lora', serif; font-weight: 100;}
   
-  .cta-btn { grid-area: cta-btn; box-shadow: 4px 24px 40px #6d6dad65; margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 18px; border: none; background-color: #00293aff; color: rgb(255, 255, 255);   font-family: 'Montserrat', sans-serif;
+  .cta-btn { grid-area: cta-btn; box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239); margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 18px; border: none; background-color: #00293aff; color: rgb(255, 255, 255);   font-family: 'Montserrat', sans-serif;
  font-weight: 400; font-size: 4vw; font-weight: 500;}
   
   .main-photo { grid-area: main-photo; width: 220%; margin: 4vh 0 0 -23vw; z-index: -1;}
@@ -98,7 +98,7 @@ a{
     padding: 0.8vw 0.8vw 0.8vw 0.8vw;
     border: solid 1.5px white;
     border-radius: 12px;
-    margin: 1.8vw 2vw 1vw 2vw;
+    margin: 1.6vw 2vw 1vw 2vw;
     display: grid; 
     grid-template-rows: 65% 35%; 
     gap: 0px 0px; 
@@ -133,7 +133,7 @@ a{
     margin: 15vw 0 15vw 0;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.171), 0 -12px 24px rgba(0, 0, 0, 0.178);
 }
-.clinic-img{grid-area: clinic-img; height: 65vw; width: 87vw; border-radius: 20px;}
+.clinic-img{grid-area: clinic-img; height: 65vw; width: 87vw; border-radius: 20px;box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239);}
 #more-clinic-text{display: none;}
 #hide-clinic-container{display: none;}
 .hide-btn{
@@ -161,7 +161,7 @@ a{
     padding-bottom: 6vw;
 }
 .container-header { grid-area: container-header;}
-.about-photo { grid-area: about-photo; height: 65vw; width: 87vw; background-image: url("../images/practitioner.jpg"); background-size: cover; border-radius: 20px;}
+.about-photo { grid-area: about-photo; height: 65vw; width: 87vw; box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239); background-image: url("../images/practitioner.jpg"); background-size: cover; border-radius: 20px;}
 .about-text { grid-area: about-text; margin: 8vw 6vw 1rem;}
 #more-about-text{
     display: none;
@@ -179,14 +179,14 @@ a{
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center;
-    height: auto;
+    height: 120vw;
     overflow: hidden;
     padding-bottom: 3vw;
 }
 .opinion-container{
     margin: 0 auto; 
     width: 80vw; 
-    height: 24vw;
+    height: 20vw;
     box-shadow: 0 10px 20px #00003d49;
     margin: 4vw 0 4vw 0;
     padding: 3vw 3vw 3vw 3vw;
