@@ -29,6 +29,11 @@
     border: none;
     background-color: #00293aff;
     box-shadow: 2px 10px 24px rgba(0, 0, 0, 0.267);
+    background-image: url("../images/back_main_img.png");
+    background-size: 4vw 6vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
 }
 .transformations{
     display: flex;
@@ -54,10 +59,13 @@
 @media(min-width:1200px){
     #mobile-transformations{display: none;}
     .page-header{
-        padding: 2vh 0 2vh;
-        font-size: 2vw;
+        padding: 2vh 0 3vh;
         border-bottom-left-radius: 56%;
         border-bottom-right-radius: 56%;
+    }
+    .page-title{
+        text-align: center;
+        font-size: 3vw;
     }
     .background{
         width: 90%;
@@ -71,10 +79,12 @@
     .carousel{margin-top: 17vh;}
     .carousel-inner{border-radius: 30px;}
     .back-btn{
-        top: 85vh;
-        right: 5vw;
+        top: 0vh;
+        left: 8vw;
         height: 5vw;
         width: 5vw;
+        background-size: 2vw 3vw;
+        box-shadow: none;
     }
     .transformations{
         display: flex;

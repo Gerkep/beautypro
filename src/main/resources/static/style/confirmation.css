@@ -10,11 +10,11 @@ body{
 .logo{
     height: 24vw;
     margin: 0 auto;
-    margin-top: 14vw;
+    margin-top: 10vw;
 }
 .main-message{
-    margin-top: 18vw;
-    font-size: 11vw;
+    margin-top: 10vw;
+    font-size: 10vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -25,7 +25,7 @@ body{
     margin-top: 14vw;
 }
 .tick-img{
-    height: 40vw;
+    height: 34vw;
     margin: 0 auto;
     filter: brightness(0) invert(1);
 }
