@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: #00293aff;
+    color: white;
+}
+.logo{
+    height: 24vw;
+    margin: 0 auto;
+    margin-top: 14vw;
+}
+.main-message{
+    margin-top: 18vw;
+    font-size: 11vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.tick-container{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 14vw;
+}
+.tick-img{
+    height: 40vw;
+    margin: 0 auto;
+    filter: brightness(0) invert(1);
+}
+.thanks-txt{
+    margin-top: 14vw;
+font-family: 'Lora', serif;
+}
+.affirmation{
+    color: rgba(255, 255, 255, 0.849);
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+font-family: 'Lora', serif;
+}
+.backlink{
+    text-decoration: none;
+    background: #ab9b76;
+    -webkit-background-clip: text;background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+font-family: 'Lora', serif;
+}
+
+@media(min-width: 1000px){
+    body{
+        font-size: 2rem;
+    }
+    .logo{
+        height: 6vw;
+        position: absolute;
+        right: 2vw;
+        margin-top: -4vw;
+    }
+    .main-message{
+        margin-top: 6vw;
+        font-size: 6vw;
+        font-weight: 400;
+    }
+    .tick-container{
+        margin-top: 3vw;
+    }
+    .tick-img{
+        height: 12vw;
+        margin: 0 auto;
+        filter: brightness(0) invert(1);
+    }
+    .thanks-txt{
+        margin-top: 3vw;
+    }
+    .affirmation{
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+}
