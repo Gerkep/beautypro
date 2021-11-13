@@ -25,7 +25,7 @@ body{
     margin-top: 14vw;
 }
 .tick-img{
-    height: 34vw;
+    height: 32vw;
     margin: 0 auto;
     filter: brightness(0) invert(1);
 }
@@ -46,6 +46,7 @@ font-family: 'Lora', serif;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
 font-family: 'Lora', serif;
+cursor: pointer;
 }
 
 @media(min-width: 1000px){
