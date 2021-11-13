@@ -11,13 +11,13 @@ import com.sendgrid.*;
 public class EmailService {
 
     public Response sendEmail(MyMail email) {
-        Email from = new Email("messagerobot0@gmail.com");
+        Email from = new Email("beautyprowebsite@gmail.com");
         String subject = "Message from website";
         Email to = new Email("piotrg2003@gmail.com");
         Content content = new Content("text/plain", email.getSender() + "\n" + email.getText());
         Mail mail = new Mail(from, subject, to, content);
         Response respons = null;
-        SendGrid sg = new SendGrid("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");
+        SendGrid sg = new SendGrid("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");
         Request request = new Request();
         try {
             request.setMethod(Method.POST);
