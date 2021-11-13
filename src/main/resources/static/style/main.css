@@ -196,7 +196,7 @@ a{
     border-radius: 4vw;
     display: grid; 
     grid-template-columns: 20% 50% 30%; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: 0.6fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "avatar name stars"
@@ -209,10 +209,10 @@ a{
  #more-opinions-btn, #hide-opinions-btn{background-color: transparent; cursor: pointer; border: none; font-size: 4vw; margin: 4vw 30% 0 30%;}
  #hide-opinions-btn{margin-top: 10vw;}
   .avatar { grid-area: avatar; height: 17vw; margin-left: 0.8vw; margin-top: 3vw;}
-  .name { grid-area: name; white-space: nowrap; overflow: hidden; font-size: 4vw; margin: 2vw 0 0 4vw;  font-family: 'Montserrat', sans-serif;
+  .name { grid-area: name; white-space: nowrap; overflow: hidden; font-size: 4vw; margin: 1vw 0 0 4vw;  font-family: 'Montserrat', sans-serif;
  font-weight: 400;}
   .description { grid-area: description; font-size: 2.8vw; margin: 0vw 0 2vw 4vw;   font-family: 'Lora', serif; font-weight: 500;}
-  .stars { grid-area: stars; width: 22vw; margin-top: 2vw;}
+  .stars { grid-area: stars; width: 22vw; margin-top: 1vw;}
   
 .more-opinions{
     margin: 3vw 40% 0 40%;
