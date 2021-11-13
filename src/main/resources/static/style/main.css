@@ -9,7 +9,6 @@ a{
 
 .navbar{
     display: flex;
-    flex-wrap: nowrap;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -341,8 +340,6 @@ footer{
         margin-top: 0vh; 
         grid-auto-rows: 64vh 24vh;
         grid-template-columns: 1.5fr 0.5fr 0.1fr;
-        grid-template-areas:
-      "welcome-text main-photo side-text";
         align-items: center;
     }
       .nav-link{
@@ -353,7 +350,7 @@ footer{
     .slogan {font-size: 5vw; font-weight: 400;}
     .slogan-small {font-size: 2.5vw;}
     .cta-btn {font-size: 2vw; height: 6vw; width: 18vw; line-height: 6vw;}
-    .main-photo {width: 135%; margin: 16vh 0 0 -10vw;}
+    .main-photo {width: 135%; margin: 17vh 0 0 -10vw;}
     .welcome-text {
       margin-top: 16vh;
       padding-left: 6vw;
@@ -389,6 +386,7 @@ footer{
           "container-header about-text"
           "clinic-img about-text"; 
         margin: 5vw 0 5vw 0;
+        padding-bottom: 9vw;
     }
 
     .clinic-img{height: 30vw; width: 40vw; margin-top: 5vh; margin-left: 0;}
