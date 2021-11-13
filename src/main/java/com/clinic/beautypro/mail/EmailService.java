@@ -11,7 +11,7 @@ import com.sendgrid.*;
 public class EmailService {
 
     public Response sendEmail(MyMail email) {
-        Email from = new Email("gerkewebs@gmail.com");
+        Email from = new Email("messagerobot0@gmail.com");
         String subject = "Message from website";
         Email to = new Email("piotrg2003@gmail.com");
         Content content = new Content("text/plain", email.getSender() + "\n" + email.getText());
