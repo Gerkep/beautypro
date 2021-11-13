@@ -79,7 +79,9 @@ a{
     display: flex;
     flex-wrap: wrap;
     border-radius: 30px;
+    opacity: 0;
 }
+.container.active{transition: all 1s ease; opacity: 1;}
 .container-header{
     width: 100%;
     text-align: center;
@@ -111,6 +113,7 @@ a{
     font-size: 2vw;
     overflow: hidden;
 }
+.treatment:hover{    filter: brightness(0) invert(1);}
 .treatment-img {
     max-height: 70%;
     grid-area: treatment-img; 
@@ -330,7 +333,7 @@ footer{
         padding: 2vh 0 1vh 0;
     }
     .nav-img{
-        height: 8vw;
+        height: 10vw;
     }
     .welcome-container{
         height: 79vh; 
@@ -346,15 +349,15 @@ footer{
         margin: 0 4vw 0 4vw;
         font-weight: 100; font-family: 'Lora', serif;
       }
-    .slogan {font-size:4vw; font-weight: 400;}
+    .slogan {font-size: 5vw; font-weight: 400;}
     .slogan-small {font-size: 2.5vw;}
     .cta-btn {font-size: 2vw; height: 6vw; width: 18vw; line-height: 6vw;}
-    .main-photo {width: 130%; margin: 20vh 0 0 -10vw;}
+    .main-photo {width: 135%; margin: 16vh 0 0 -10vw;}
     .welcome-text {
-      margin-top: 14vh;
+      margin-top: 16vh;
       padding-left: 6vw;
       align-items: center;
-      grid-gap: 3vh;
+      grid-gap: 0vh;
       grid-template-rows: 1fr 1fr 1fr;
       
     }
@@ -412,7 +415,7 @@ footer{
         height: 24vw;
         margin: 4vw 4vw 4vw 4vw; 
         grid-template-columns: 1fr; 
-        grid-template-rows: 30% 25% 10% 40%; 
+        grid-template-rows: 30% 20% 10% 40%; 
         gap: 0px 0px; 
         grid-template-areas: 
           "avatar"
@@ -420,11 +423,13 @@ footer{
           "stars"
           "description"; 
           border-radius: 10px;
+          justify-content: center;
+          align-items: center;
       }
-      .avatar {height: 7vw; margin: 5vh 0 0 0;}
-      .name {font-size: 1.6vw; margin: 4vh 0 0 0; text-align: center;}
-      .description {font-size: 1.2vw; margin: 1vh 0 0 0; text-align: center;}
-      .stars { grid-area: stars; width: 10vw;}
+      .avatar {height: 7vw; margin: 5vh 0 0 0; margin: 0 auto;}
+      .name {font-size: 1.6vw; margin: 2vh 0 0 0; text-align: center;}
+      .description {font-size: 1.2vw; margin: 3vh 0 0 0; text-align: center;}
+      .stars { grid-area: stars; width: 10vw; margin: 0 auto;}
       #more-opinions-btn{font-size: 2vw; margin: 1vw 40% 5vw 40%;}
       #contact-container{
           width: 80%;
