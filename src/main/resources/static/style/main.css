@@ -278,11 +278,12 @@ footer{
     border-top: #ab9b76ff 1px solid; 
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 30vw 24vw 34vw; 
+    grid-template-rows: 30vw 25vw 45vw 10vw; 
     grid-template-areas: 
       "footer-logo"
       "social-media"
-      "footer-contact"; 
+      "footer-contact"
+      "footer-adress"; 
     justify-content: center; 
     justify-items: center; 
     align-items: center; 
@@ -304,7 +305,7 @@ footer{
 .social-media{
     grid-area: social-media;
     height: 3rem;
-    margin-top: 2vh;
+    margin: 3vh 0 3vh 0;
     display: flex;
     justify-content: right;
 }
@@ -324,7 +325,17 @@ footer{
     text-align: center;
     font-weight: 100;
       font-family: 'Lora', serif;
-    margin-bottom: 2vh;
+      margin: 2vh 0 2vh 0;
+}
+#policy-desktop{display: none;}
+.footer-adress{
+    grid-area: footer-adress;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.705);
+    font-weight: 100;
+    font-family: 'Lora', serif;
+    font-size: 3vw;
+    margin-bottom: 2vw;
 }
 .privacy-policy{color: rgba(255, 255, 255, 0.493);}
 
@@ -462,8 +473,15 @@ footer{
         justify-content: center; 
           font-family: 'Lora', serif;
     }
+    #policy-desktop{display: block;}#policy-mobile{display: none;}
+    .footer-adress{
+        font-size: 1vw;
+        text-align: left;
+        margin: 2vh 0 6.2vh 0;
+    }
     .footer-logo{
         width: 80%;
+        margin-top: 0;
     }
     .media-logo{
         width: 3vw;
@@ -471,7 +489,7 @@ footer{
         margin: 0 4vw 0 4vw;
     }
     .social-media{
-        margin-top: 0vh;
+        margin-top: 2vh;
     }
     .footer-text{
         display: grid; 
@@ -479,17 +497,16 @@ footer{
         grid-template-rows: 1fr; 
         gap: 0px 30px; 
         grid-template-areas: 
-          "footer-contact footer-links"; 
+          "footer-contact footer-links footer-adress"; 
         justify-content: center; 
         justify-items: center; 
         align-items: center; 
-        margin-left: 8vw;
+        margin-left: 4vw;
     }
     .footer-contact{
-        margin: 8vh 0 3vh 0;
-        grid-area: footer-contact;
+        margin: 6vh 0 6vh 0;
         font-size: 1vw;
         text-align: left;
     }
-    .footer-links{display: block; margin: 8vh 0 3vh 0; font-size: 1vw; color: rgba(255, 255, 255, 0.705);}
+    .footer-links{display: block; margin: 6vh 0 6vh -3vw; font-size: 1vw; color: rgba(255, 255, 255, 0.705);}
   }
