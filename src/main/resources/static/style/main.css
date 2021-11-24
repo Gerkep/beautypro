@@ -6,7 +6,9 @@ a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.705);
 }
-
+body{
+    font-family: 'Lora', serif;
+}
 .navbar{
     display: flex;
     overflow: hidden;
@@ -19,7 +21,7 @@ a{
     color: rgba(0, 0, 0, 0.801);
     font-size: 3.2vw;
     margin: 0 1vw 0 1vw;
-      font-family: 'Lora', serif;
+      
       border-radius: 50%;
       padding: 1.5vw 1.5vw 1.5vw 1.5vw;
 }
@@ -60,7 +62,7 @@ a{
   .slogan { grid-area: slogan; font-size: 5.5vw; font-family: 'Montserrat', sans-serif;
  font-weight: 400; font-weight: 600;}
   
-  .slogan-small { grid-area: slogan-small;font-size: 3.4vw;   font-family: 'Lora', serif; font-weight: 100;}
+  .slogan-small { grid-area: slogan-small;font-size: 3.4vw; font-weight: 100;}
   
   .cta-btn { grid-area: cta-btn; box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239); margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 30px; border: none; background-color: #00293aff; color: rgb(255, 255, 255);   font-family: 'Montserrat', sans-serif;
  font-weight: 400; font-size: 4vw; font-weight: 500;text-align: center;line-height: 14vw;}
@@ -90,9 +92,14 @@ a{
 .container-header h2{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    text-align: center;
 }
-.header{float: left; margin: 1rem 4vw 1rem;}
-#treatments-container{padding: 3vw 0 10vw 0; z-index: 100;    box-shadow: 0px 12px 20px rgba(0, 41, 58, 0.267);}
+.header{ margin: 1rem 4vw 1rem;}
+.stage-container{width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
+.stage-number{height: 16vw; margin: 8vw 35% 3vw 35%;}#first-stage{margin-top: 2vw;}
+.stage-header{ color: white; text-align: center; margin-bottom: 3vw; font-family: 'Montserrat', sans-serif;}
+.stage-desc{text-align: center; color: #ffffff94; margin: 0 3vw 0 3vw; font-size: 4vw;}
+#treatments-container{padding: 3vw 0 10vw 0; z-index: 100; box-shadow: 0px 12px 20px rgba(0, 41, 58, 0.267);}
 .treatments{display: flex; flex-wrap: wrap; justify-content: center; width: 100%; height: auto;}
 .treatment{
     width: 18vw;
@@ -120,7 +127,7 @@ a{
     max-width: 60%;
 }
 #face{max-height: 120%;}
-.treatment-txt { grid-area: treatment-txt;  font-family: 'Lora', serif; text-align: center; color: white;}
+.treatment-txt { grid-area: treatment-txt;   text-align: center; color: white;}
 #clinic-container{
     display: grid; 
     grid-template-rows: 25vw 65vw auto; 
@@ -167,7 +174,7 @@ a{
 }
 .container-header { grid-area: container-header;}
 .about-photo { grid-area: about-photo; height: 65vw; width: 87vw; box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239); background-image: url("../images/practitioner.jpg"); background-size: cover; border-radius: 20px;}
-.about-text { grid-area: about-text; padding: 8vw 6vw 1rem; font-family: 'Lora', serif;}
+.about-text { grid-area: about-text; padding: 8vw 6vw 1rem; }
 #more-about-text{
     display: none;
 }
@@ -210,12 +217,12 @@ a{
  #more-opinions-btn, #hide-opinions-btn{background-color: transparent; cursor: pointer; border: none; font-size: 4vw; margin: 4vw 30% 0 30%;}
  #hide-opinions-btn{margin-top: 10vw;}
   .quote-before { grid-area: quote-before; height: 4vw;  margin-left: 30vw; margin-top: 2vw;}
-  .description { grid-area: description; font-size: 3.2vw; margin: 4vw 4vw 0vw 4vw; font-family: 'Lora', serif; font-weight: 4500;}
+  .description { grid-area: description; font-size: 3.2vw; margin: 2vw 4vw 0vw 4vw;  font-weight: 4500;}
   .stars { grid-area: stars; width: 25vw; margin-top: 2vw;  margin-left: 4vw;}
   
 .more-opinions{
     margin: 3vw 40% 0 40%;
-    color: black; font-family: 'Lora', serif; font-size: 5vw;
+    color: black;  font-size: 5vw;
     background-color: transparent; border: none;
 }
 #contact-container{
@@ -320,7 +327,7 @@ footer{
     font-size: 3vw;
     text-align: center;
     font-weight: 100;
-      font-family: 'Lora', serif;
+      
       margin: 2vh 0 2vh 0;
 }
 #policy-desktop{display: none;}
@@ -329,7 +336,7 @@ footer{
     text-align: center;
     color: rgba(255, 255, 255, 0.705);
     font-weight: 100;
-    font-family: 'Lora', serif;
+    
     font-size: 3vw;
     margin-bottom: 2vw;
 }
@@ -352,7 +359,7 @@ footer{
       .nav-link{
         font-size: 2vw;
         margin: 0 4vw 0 4vw;
-        font-weight: 100; font-family: 'Lora', serif;
+        font-weight: 100; 
       }
     .slogan {font-size: 5vw; font-weight: 400;}
     .slogan-small {font-size: 2.5vw;}
@@ -465,7 +472,7 @@ footer{
         grid-template-areas: 
           "footer-logo footer-contact social-media";
         justify-content: center; 
-          font-family: 'Lora', serif;
+          
     }
     #policy-desktop{display: block;}#policy-mobile{display: none;}
     .footer-adress{
