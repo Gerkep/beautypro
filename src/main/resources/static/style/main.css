@@ -209,7 +209,7 @@ a{
   #more-opinions{display: none; flex-wrap: wrap; width: 100%; justify-content: center;}
  #more-opinions-btn, #hide-opinions-btn{background-color: transparent; cursor: pointer; border: none; font-size: 4vw; margin: 4vw 30% 0 30%;}
  #hide-opinions-btn{margin-top: 10vw;}
-  .quote-before { grid-area: quote-before; height: 4vw; width: 6vw; max-width: 6vw;  margin-left: 30vw; margin-top: 2vw;}
+  .quote-before { grid-area: quote-before; height: 4vw;  margin-left: 30vw; margin-top: 2vw;}
   .description { grid-area: description; font-size: 3.2vw; margin: 4vw 4vw 0vw 4vw; font-family: 'Lora', serif; font-weight: 4500;}
   .stars { grid-area: stars; width: 25vw; margin-top: 2vw;  margin-left: 4vw;}
   
