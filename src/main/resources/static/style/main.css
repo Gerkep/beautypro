@@ -96,8 +96,9 @@ body{
 }
 .white-header{font-weight: 600 !important;}
 .header{ margin: 1rem 4vw 1rem;}
-.stages{margin-top: 3vw;}
-.stage-container{width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
+.stages{margin-top: 3.2vw;}
+.stage-container{width: 100%; display: flex; justify-content: center; flex-wrap: wrap; opacity: 0;}
+.stage-container.active{opacity: 1; transition: all 0.7s ease;}
 .stage-number{height: 16vw; margin: 8vw 35% 3vw 35%;}#first-stage{margin-top: 2vw;}
 .stage-header{ color: white; text-align: center; margin: 2vw 0 3vw 0; font-family: 'Montserrat', sans-serif;}
 .stage-desc{text-align: center; color: #ffffffda; margin: 0 5vw 0 5vw; font-size: 3.7vw;}
@@ -232,8 +233,9 @@ body{
 }
 .testimonials{padding: 0 5vw 0 5vw;}
 .testimonials-text{font-size: 4vw; color: #000000; margin-top: 4vw;}
-.testimonials-block{padding: 5vw 3vw 5vw 3vw; display: flex; overflow: hidden; margin: 6vw 0 6vw 0; font-weight: 500;}
+.testimonials-block{opacity: 0;padding: 5vw 3vw 5vw 3vw; display: flex; overflow: hidden; margin: 6vw 0 6vw 0; font-weight: 500;}
 .testimonials-block p{padding: 2vw 1vw 2vw 3vw;}
+.testimonials-block.active{opacity: 1; transition: all 1s ease; transform: scale(1.04);}
 .testimonials-tab{width: 7vw; height: 9vw; margin-top: -5vw;}
 .testimonials-under{margin-top: 10vw !important; }
 #contact-container{
