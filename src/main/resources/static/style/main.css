@@ -200,7 +200,6 @@ a{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 0.4fr 1.3fr; 
-    gap: 0px 0px; 
     grid-template-areas: 
       "stars quote-before"
       "description description"; 
