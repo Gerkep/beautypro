@@ -18,12 +18,13 @@ body{
     padding-top: 2vh;
 }
 .nav-link{
-    color: rgba(0, 0, 0, 0.801);
+    color: rgb(0, 0, 0);
     font-size: 3.2vw;
     margin: 0 1vw 0 1vw;
       
       border-radius: 50%;
       padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+      font-weight: 500;
 }
 .nav-link:hover{
     color: white;
@@ -95,6 +96,7 @@ body{
 }
 .white-header{font-weight: 600 !important;}
 .header{ margin: 1rem 4vw 1rem;}
+.stages{margin-top: 3vw;}
 .stage-container{width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
 .stage-number{height: 16vw; margin: 8vw 35% 3vw 35%;}#first-stage{margin-top: 2vw;}
 .stage-header{ color: white; text-align: center; margin: 2vw 0 3vw 0; font-family: 'Montserrat', sans-serif;}
