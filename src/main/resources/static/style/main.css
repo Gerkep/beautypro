@@ -59,10 +59,9 @@ body{
   }
   .side-text{grid-area: side-text; display: none;}
   .outstanding-txt{font-weight: 600; color: #00293aff;}
-  .slogan { grid-area: slogan; font-size: 5.5vw; font-family: 'Montserrat', sans-serif;
- font-weight: 400; font-weight: 600;}
+  .slogan { grid-area: slogan; font-size: 5.5vw; font-family: 'Montserrat', sans-serif;font-weight: 600;}
   
-  .slogan-small { grid-area: slogan-small;font-size: 3.4vw; font-weight: 100;}
+  .slogan-small { grid-area: slogan-small;font-size: 3.4vw; font-weight: 500;}
   
   .cta-btn { grid-area: cta-btn; box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239); margin-bottom: 1.1em; height: 14vw; width: 30vw; border-radius: 30px; border: none; background-color: #00293aff; color: rgb(255, 255, 255);   font-family: 'Montserrat', sans-serif;
  font-weight: 400; font-size: 4vw; font-weight: 500;text-align: center;line-height: 14vw;}
@@ -94,11 +93,12 @@ body{
     font-weight: 400;
     text-align: center;
 }
+.white-header{font-weight: 600 !important;}
 .header{ margin: 1rem 4vw 1rem;}
 .stage-container{width: 100%; display: flex; justify-content: center; flex-wrap: wrap;}
 .stage-number{height: 16vw; margin: 8vw 35% 3vw 35%;}#first-stage{margin-top: 2vw;}
-.stage-header{ color: white; text-align: center; margin-bottom: 3vw; font-family: 'Montserrat', sans-serif;}
-.stage-desc{text-align: center; color: #ffffff94; margin: 0 3vw 0 3vw; font-size: 4vw;}
+.stage-header{ color: white; text-align: center; margin: 2vw 0 3vw 0; font-family: 'Montserrat', sans-serif;}
+.stage-desc{text-align: center; color: #ffffffda; margin: 0 5vw 0 5vw; font-size: 3.7vw;}
 #treatments-container{padding: 3vw 0 10vw 0; z-index: 100; box-shadow: 0px 12px 20px rgba(0, 41, 58, 0.267);}
 .treatments{display: flex; flex-wrap: wrap; justify-content: center; width: 100%; height: auto;}
 .treatment{
@@ -120,6 +120,15 @@ body{
     font-size: 2vw;
     overflow: hidden;
 }
+.white-block{
+    margin: 0 auto; 
+    width: 80vw; 
+    height: auto;
+    box-shadow: 0 10px 20px #00003d49;
+    margin: 4vw 0 4vw 0;
+    padding: 3vw 3vw 3vw 3vw;
+    border-radius: 30px;
+}
 .treatment:hover{transition: all 0.5s ease; border: solid 1.5px white; filter: brightness(0) invert(1); transform: scale(1.1);}
 .treatment-img {
     max-height: 70%;
@@ -128,37 +137,7 @@ body{
 }
 #face{max-height: 120%;}
 .treatment-txt { grid-area: treatment-txt;   text-align: center; color: white;}
-#clinic-container{
-    display: grid; 
-    grid-template-rows: 25vw 65vw auto; 
-    grid-template-areas: 
-      "container-header"
-      "clinic-img"
-      "about-text"; 
-    justify-content: center; 
-    justify-items: center; 
-    align-items: center; 
-    padding-bottom: 6vw;
-    overflow: hidden;
-    margin: 15vw 0 15vw 0;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.171), 0 -12px 24px rgba(0, 0, 0, 0.178);
-}
-.clinic-img{grid-area: clinic-img; height: 65vw; width: 87vw; border-radius: 20px;box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239);}
-#more-clinic-text{display: none;}
-#hide-clinic-container{display: none;}
-.hide-btn{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-.more-btn{
-    background-color: transparent; border: none;
-    cursor: pointer;
-    color: black;
-}
-.button-container{
-    display: flex; width: 100%; justify-content: center; margin-top: 10vw;
-}
+
 #about-container{
     padding-top: 0;
     display: grid; 
@@ -197,13 +176,6 @@ body{
     padding-bottom: 3vw;
 }
 .opinion-container{
-    margin: 0 auto; 
-    width: 80vw; 
-    height: auto;
-    box-shadow: 0 10px 20px #00003d49;
-    margin: 4vw 0 4vw 0;
-    padding: 3vw 3vw 3vw 3vw;
-    border-radius: 30px;
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 0.4fr 1.3fr; 
@@ -225,6 +197,43 @@ body{
     color: black;  font-size: 5vw;
     background-color: transparent; border: none;
 }
+#clinic-container{
+    display: grid; 
+    grid-template-rows: 25vw 65vw auto; 
+    grid-template-areas: 
+      "container-header"
+      "clinic-img"
+      "about-text"; 
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center; 
+    padding: 0 0 6vw 0;
+    overflow: hidden;
+    margin: 15vw 0 15vw 0;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.171), 0 -12px 24px rgba(0, 0, 0, 0.178);
+}
+.clinic-img{grid-area: clinic-img; height: 65vw; width: 87vw; border-radius: 20px;box-shadow: 2px 12px 20px rgba(0, 0, 0, 0.239);}
+#more-clinic-text{display: none;}
+#hide-clinic-container{display: none;}
+.hide-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.more-btn{
+    background-color: transparent; border: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.button-container{
+    display: flex; width: 100%; justify-content: center; margin-top: 10vw;
+}
+.testimonials{padding: 0 5vw 0 5vw;}
+.testimonials-text{font-size: 4vw; color: #000000; margin-top: 4vw;}
+.testimonials-block{padding: 5vw 3vw 5vw 3vw; display: flex; overflow: hidden; margin: 6vw 0 6vw 0; font-weight: 500;}
+.testimonials-block p{padding: 2vw 1vw 2vw 3vw;}
+.testimonials-tab{width: 7vw; height: 9vw; margin-top: -5vw;}
+.testimonials-under{margin-top: 10vw !important; }
 #contact-container{
     margin-top: 20vw;
     border-bottom-left-radius: 0px;
@@ -276,6 +285,12 @@ body{
  font-weight: 400;
     color: white;
 }
+.initial-consultations{padding: 0 5vw 0 5vw; text-align: left;}
+#initial-consultation-header{text-align: left; margin-top: 10vw; font-size: 4vw; font-family: 'Montserrat', sans-serif;}
+#initial-consultations-text-more{text-align: left; font-size: 3vw; display: none; color: #ffffffda;}
+.consultation-pros{margin: 3vw 0 0 6vw;}
+.initial-consultation-text{font-size: 3vw; margin-top: 3vw; color: #ffffffda;}
+#more-contact-btn{font-size: 3vw;}
 footer{
     background-color: #00293aff; 
     border-top: #ab9b76ff 1px solid; 

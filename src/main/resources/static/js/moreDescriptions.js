@@ -29,3 +29,11 @@ function hideMoreClinic(){
     moreClinicBtn.style.display = "inline";
     hideClinicButton.style.display = "none";
 }
+
+const moreContactBtn = document.getElementById("more-contact-btn");
+const moreTextContact = document.getElementById("initial-consultations-text-more");
+
+function viewMoreContact(){
+    moreTextContact.style.display = "block"
+    moreContactBtn.style.display = "none";
+}

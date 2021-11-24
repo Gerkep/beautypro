@@ -3,10 +3,10 @@
     <head>
         <title>BeautyPro</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="../style/main.css">
+        <link rel="stylesheet" href="../static/style/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,500|Montserrat:400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,500|Montserrat:400,600" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" /> 
         <meta name="description" content="">
     </head>
@@ -14,7 +14,7 @@
         <div class="navbar">
             <a class="nav-link" th:href="@{/transformations}">portfolio</a>
             <a class="nav-link left-link" href="#clinic-container">about</a>
-            <img class="nav-img" src="../images/logo-beauty.PNG">
+            <img class="nav-img" src="../static/images/logo-beauty.PNG">
             <a class="nav-link right-link" th:href="@{/pricing}">offer</a>
             <a class="nav-link" href="#contact-container">contact</a>
         </div>
@@ -24,27 +24,27 @@
                 <h3 class="slogan-small">Thanks to professionally performed<br> anti aging treatments!</h3>
                 <a href="#contact-container" class="cta-btn"><b>Book now</b></a>
             </div>
-            <img class="main-photo" src="../images/illustration_paulina.png">
+            <img class="main-photo" src="../static/images/illustration_paulina.png">
         </div>
         <div class="container navy-container" id="stages-container">
             <div class="container-header">
-                <h2 class="header" id="treatments-header">STAGES TO HAPPINESS<br> WITH BEAUTYPRO</h2>
+                <h2 class="header">STAGES TO HAPPINESS<br> WITH BEAUTYPRO</h2>
             </div>
             <div class="stages">
                 <div class="stage-container">
-                    <img class="stage-number" id="first-stage" src="../images/stage_one.png">
+                    <img class="stage-number" id="first-stage" src="../static/images/stage_one.png">
                     <a class="stage-header" href="#">CONSULTATION</a>
                     <p class="stage-desc">In our cosy and homey clinic, we welcome clients with a smile and relaxed atmosphere so we can
                         comfortably discuss their individual needs and explain proposed procedures and treatments.</p>
                 </div>
                 <div class="stage-container">
-                    <img class="stage-number" src="../images/stage_two.png">
+                    <img class="stage-number" src="../static/images/stage_two.png">
                     <a class="stage-header" href="#">TREATMENT</a>
                     <p class="stage-desc">In our cosy and homey clinic, we welcome clients with a smile and relaxed atmosphere so we can
                         comfortably discuss their individual needs and explain proposed procedures and treatments.</p>
                 </div>
                 <div class="stage-container">
-                    <img class="stage-number" src="../images/stage_three.png">
+                    <img class="stage-number" src="../static/images/stage_three.png">
                     <a class="stage-header" href="#">FOLLOW UP</a>
                     <p class="stage-desc">In our cosy and homey clinic, we welcome clients with a smile and relaxed atmosphere so we can
                         comfortably discuss their individual needs and explain proposed procedures and treatments.</p>
@@ -54,39 +54,18 @@
             </div>
         </div>
         <div class="container navy-container" id="treatments-container">
-            <div class="container-header">
-                <h2 class="header" id="treatments-header">TREATMENTS</h2>
+            <div class="container-header white">
+                <h2 class="header white-header" id="treatments-header">TREATMENTS</h2>
             </div>
             <div class="treatments">
-                <a th:href="@{/pricing}" class="treatment"><img class="treatment-img" src="../images/anti_wrinkle.png"><p class="treatment-txt">Botox injections</p></a>
-                <a href="https://beauty-pro.herokuapp.com/pricing#exessive-sweating-hyperdosis" class="treatment"><img class="treatment-img" src="../images/sweat.png"><p class="treatment-txt">Sweating hyperhidosis</p></a>
-                <a href="https://beauty-pro.herokuapp.com/pricing#teeth-grinding" class="treatment"><img class="treatment-img" src="../images/tooth.png"><p class="treatment-txt">Teeth grinding</p></a>
-                <a href="https://beauty-pro.herokuapp.com/pricing#facials" class="treatment"><img class="treatment-img" id="face" src="../images/face.png"><p class="treatment-txt">Facials</p></a>
-                <a href="https://beauty-pro.herokuapp.com/pricing#dermal-filters" class="treatment"><img class="treatment-img" src="../images/mouth.png"><p class="treatment-txt">Dermal filters</p></a>
-                <a href="https://beauty-pro.herokuapp.com/pricing#skin-boosters" class="treatment"><img class="treatment-img" src="../images/skin.png"><p class="treatment-txt">Skin boosters</p></a>
-                <a href="https://beauty-pro.herokuapp.com/pricing#weight-managment" class="treatment"><img class="treatment-img" src="../images/scale.png"><p class="treatment-txt">Weight managment</p></a>
-                <a href="https://beauty-pro.herokuapp.com/pricing#vitamin-injections" class="treatment"><img class="treatment-img" src="../images/injection.png"><p class="treatment-txt">Vitamin injections</p></a>
-            </div>
-        </div>
-
-        <div class="container white-container appearing" id="clinic-container">
-            <div class="container-header">
-                <h2 class="header">ABOUT OUR CLINIC</h2>
-            </div>
-            <img class="clinic-img" src="../images/clinic-img.jpg">
-            <div class="about-text">
-                <p>
-                    BeautyPro is a pharmacist led, non-surgical medical Aesthetics Clinic which provides a range of treatments including anti – aging treatment, injected fillers, facial peels, dermal fillers, and a selection of cosmeceutical skincare.<button onclick="viewMoreClinic()" class="more-btn" id="more-clinic-btn"><b>...read more</b></button><br><br>
-                    <p id="more-clinic-text">
-                        We are committed to delivering a high quality and bespoke service to all patients from consultation right through to treatment and aftercare.
-                        Every treatment and product available to our clients, <b>including prescription only treatments</b>, has been chosen based on their safety, efficacy, and clinically proven results.<br><br>
-                        Our mission is to provide our clients with the best possible care to restore and rejuvenate their skin. 
-                        We believe in offering natural looking results that will help our clients match their appearance with how they really feel on the inside.
-                    </p> 
-                    <div class="button-container" id="hide-clinic-container">
-                        <button onclick="hideMoreClinic()" class="hide-btn" id="hide-clinic-btn"><img class="btn-img" src="../images/hide-button.png"></button>
-                   </div>
-                </p>
+                <a th:href="@{/pricing}" class="treatment"><img class="treatment-img" src="../static/images/anti_wrinkle.png"><p class="treatment-txt">Botox injections</p></a>
+                <a href="https://beauty-pro.herokuapp.com/pricing#exessive-sweating-hyperdosis" class="treatment"><img class="treatment-img" src="../static/images/sweat.png"><p class="treatment-txt">Sweating hyperhidosis</p></a>
+                <a href="https://beauty-pro.herokuapp.com/pricing#teeth-grinding" class="treatment"><img class="treatment-img" src="../static/images/tooth.png"><p class="treatment-txt">Teeth grinding</p></a>
+                <a href="https://beauty-pro.herokuapp.com/pricing#facials" class="treatment"><img class="treatment-img" id="face" src="../static/images/face.png"><p class="treatment-txt">Facials</p></a>
+                <a href="https://beauty-pro.herokuapp.com/pricing#dermal-filters" class="treatment"><img class="treatment-img" src="../static/images/mouth.png"><p class="treatment-txt">Dermal filters</p></a>
+                <a href="https://beauty-pro.herokuapp.com/pricing#skin-boosters" class="treatment"><img class="treatment-img" src="../static/images/skin.png"><p class="treatment-txt">Skin boosters</p></a>
+                <a href="https://beauty-pro.herokuapp.com/pricing#weight-managment" class="treatment"><img class="treatment-img" src="../static/images/scale.png"><p class="treatment-txt">Weight managment</p></a>
+                <a href="https://beauty-pro.herokuapp.com/pricing#vitamin-injections" class="treatment"><img class="treatment-img" src="../static/images/injection.png"><p class="treatment-txt">Vitamin injections</p></a>
             </div>
         </div>
 
@@ -104,7 +83,7 @@
                     Paulina takes pride in delivering excellent customer service whilst performing bespoke aesthetic treatments. Paulina is professional, approachable, and sure to make clients secure, confident and at ease in her hands.
                     <br><br>“It is and honour for me to help my clients match their look with what they really feel on the inside, to improve their skin and the way they feel about themselves, to boost their confidence and with that they can better their opportunities in life.”
                     <div class="button-container" id="hide-about-container">
-                         <button onclick="hideMoreAbout()" class="hide-btn" id="hide-about-btn"><img class="btn-img" src="../images/hide-button.png"></button>
+                         <button onclick="hideMoreAbout()" class="hide-btn" id="hide-about-btn"><img class="btn-img" src="../static/images/hide-button.png"></button>
                     </div>
                 </p>
             </div>
@@ -112,48 +91,109 @@
 
         <div class="container white-container" id="opinions-container">
             <div class="container-header">
-                <h2 class="header" id="opinions-header">OPINIONS</h2>
+                <h2 class="header white-header" id="opinions-header">OPINIONS</h2>
             </div>
             <div class="opinions" id="opinions">
-                <div class="opinion-container">
-                    <img class="quote-before" src="../images/quote.png">
-                    <img class="stars" src="../images/stars.png">
+                <div class="opinion-container white-block">
+                    <img class="quote-before" src="../static/images/quote.png">
+                    <img class="stars" src="../static/images/stars.png">
                     <p class="description">Would 110% recommend Paulina The beauty pro aesthetic clinic, after only two visits my skin is flawless! Extremely professional & knowledgeable regarding all treatments.. ❤️ I wouldn’t want to go anywhere else thank you!</p>
                 </div>
-                <div class="opinion-container">
-                    <img class="quote-before" src="../images/quote.png">
-                    <img class="stars" src="../images/stars.png">
+                <div class="opinion-container white-block">
+                    <img class="quote-before" src="../static/images/quote.png">
+                    <img class="stars" src="../static/images/stars.png">
                     <p class="description">I’ve loved going to Beauty Pro Aesthetics Clinic , Paulina is so professional, talks me through every treatment, her advise is amazing, the treatments are always done with care, I’ve never had any bruising, she always takes her time to make sure I’m comfortable.</p>
                 </div>
                 
-                <div class="opinion-container">
-                    <img class="quote-before" src="../images/quote.png">
-                    <img class="stars" src="../images/stars.png">
+                <div class="opinion-container white-block">
+                    <img class="quote-before" src="../static/images/quote.png">
+                    <img class="stars" src="../static/images/stars.png">
                     <p class="description">I am impressed with Paulina's knowledge, professionalism and how well she interpreted my skin needs and wishes. It was the first time ever I had any aesthetic treatment and I don't really know why I was so reserved about it - Paulina made me love it!</p>
                 </div>
                  <button class="more-opinions" id="more-opinions-btn" onclick="showMore()">More...</button>
                 <div id="more-opinions">
-                    <div class="opinion-container">
-                        <img class="quote-before" src="../images/quote.png">
-                        <img class="stars" src="../images/stars.png">
+                    <div class="opinion-container white-block">
+                        <img class="quote-before" src="../static/images/quote.png">
+                        <img class="stars" src="../static/images/stars.png">
                         <p class="description">Thank you so much for beautiful lips they looks natural and hydrating I have been looking for that effect. I'm satisfied with the service it was pleasant ambience I will highly recomend Paulina. </p>
 
                     </div>
-                    <div class="opinion-container">
-                        <img class="quote-before" src="../images/quote.png">
-                        <img class="stars" src="../images/stars.png">
+                    <div class="opinion-container white-block">
+                        <img class="quote-before" src="../static/images/quote.png">
+                        <img class="stars" src="../static/images/stars.png">
                         <p class="description">highly recommend Beauty pro aesthetics!!! never had lip fillers before and was so nervous but Paulina made me feel so relaxed and I absolutely love my new 💋 lips!!! Will be coming back to Paulina for more !! xx ❤</p>
 
                     </div>
-                    <div class="opinion-container">
-                        <img class="quote-before" src="../images/quote.png">
-                        <img class="stars" src="../images/stars.png">
+                    <div class="opinion-container white-block">
+                        <img class="quote-before" src="../static/images/quote.png">
+                        <img class="stars" src="../static/images/stars.png">
                         <p class="description">Absolutnie zadowolona z wizyty w BeautyPro Aesthetic Clinic Pani Paulina bardzo profesjonalnie podchodzi to swojej pracy przy czym jest miłą i wesołą osoba co sprawiło że czułam się bardzo zrelaksowana mój Botox efekt mega polecam w 100% wrócę na pewno bez dwóch zdań.</p>
 
                     </div>
-                    <button onclick="hideOpinions()" class="less-opinions" id="hide-opinions-btn"><img class="btn-img" src="../images/hide-button.png"></button>
+                    <button onclick="hideOpinions()" class="less-opinions" id="hide-opinions-btn"><img class="btn-img" src="../static/images/hide-button.png"></button>
             </div>
             </div>
+        </div>
+
+        <div class="container navy-container appearing" id="clinic-container">
+            <div class="container-header">
+                <h2 class="header">ABOUT OUR CLINIC</h2>
+            </div>
+            <img class="clinic-img" src="../static/images/clinic-img.jpg">
+            <div class="about-text">
+                <p>
+                    BeautyPro is a pharmacist led, non-surgical medical Aesthetics Clinic which provides a range of treatments including anti – aging treatment, injected fillers, facial peels, dermal fillers, and a selection of cosmeceutical skincare.<button onclick="viewMoreClinic()" class="more-btn" id="more-clinic-btn"><b>...read more</b></button><br><br>
+                    <p id="more-clinic-text">
+                        We are committed to delivering a high quality and bespoke service to all patients from consultation right through to treatment and aftercare.
+                        Every treatment and product available to our clients, <b>including prescription only treatments</b>, has been chosen based on their safety, efficacy, and clinically proven results.<br><br>
+                        Our mission is to provide our clients with the best possible care to restore and rejuvenate their skin. 
+                        We believe in offering natural looking results that will help our clients match their appearance with how they really feel on the inside.
+                    </p> 
+                    <div class="button-container" id="hide-clinic-container">
+                        <button onclick="hideMoreClinic()" class="hide-btn" id="hide-about-btn"><img class="btn-img" src="../static/images/hide-button.png"></button>
+                   </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="container white-container" id="testimonials-container">
+            <div class="container-header">
+                <h2 class="header white-header">TESTIMONIALS</h2>
+            </div>
+                <div class="testimonials">
+                    <p class="testimonials-text">
+                        Being able to help our clients to feel better and be more comfortable with their appearance is very
+                        special. We appreciate the time taken to let us know how our clients feel about the treatments they
+                        have had.<br><br>
+                        <b>We take pride in:</b>
+                    </p>
+                <div class="testimonials-block white-block">
+                    <img class="testimonials-tab" src="../static/images/testimonials-tab.png">
+                    <p>Delivering the highest quality of beauty treatments</p>
+                </div>
+                <div class="testimonials-block white-block">
+                    <img class="testimonials-tab" src="../static/images/testimonials-tab.png">
+                    <p>
+                        Equipping our clients with knowledge and understanding of how we can help them
+                        achieve their beauty goals
+                    </p>
+                </div>
+                <div class="testimonials-block white-block">
+                    <img class="testimonials-tab" src="../static/images/testimonials-tab.png">
+                    <p>
+                        Making our clients comfortable and secure in our clinic
+                    </p>
+                </div>
+                <div class="testimonials-block white-block">
+                    <img class="testimonials-tab" src="../static/images/testimonials-tab.png">
+                    <p>
+                        Supporting our clients to change how they feel about themselves, improving their self-esteem and confidence.
+                    </p>
+                </div>
+                <p class="testimonials-text testimonials-under">
+                    Join our Happy Clients Community and start your aesthetic journey with us today. Book your <b>Free Initial Consultation</b> and see how we could help you achieve your beauty gaols.
+                </p>
+        </div>
         </div>
 
         <div class="container navy-container" id="contact-container">
@@ -165,10 +205,31 @@
                 <textarea class="input" id="message-input" th:field="${mail.text}" placeholder="Message..."></textarea>
                 <button class="send-btn" type="submit">Send</button>
             </form>
+            <div class="initial-consultations">
+                <h3 id="initial-consultation-header">What to expect during the initial consultation?</h3>
+                <p class="initial-consultation-text">We offer <b>FREE</b> video call consultations as well as <b>FREE</b> regular in Clinic consultations for anyone who
+                    would like more information on a treatment before making a booking<button onclick="viewMoreContact()" class="more-btn" id="more-contact-btn"><b>...read more</b></button></p>
+                <div id="initial-consultations-text-more">
+                    The initial consultation is extensive, with no obligation and on average lasts about 20 minutes<br><br>
+                    <b>Our initial consultations are designed to:</b>
+                    <ul class="consultation-pros">
+                        <li>meet the practitioner</li><br>
+                        <li>collect medical records</li><br>
+                        <li>perform full face analysis</li><br>
+                        <li>discuss treatment options</li><br>
+                        <li>ask questions</li><br>
+                        <li>make a well informed choice</li><br>
+                        <li>create an appriopriate treatment plan</li><br>
+                    </ul><br>
+                    We take extra care and collect as much information as possible to rule out any risk due to patient’s
+                    health, medical history, or current conditions.<br><br>
+                    Contact us today to book your <b>Free Initial Consultation.</b>
+                </div>
+            </div>
         </div>
 
         <footer>
-            <img class="footer-logo" src="../images/beautypro_navy.png">
+            <img class="footer-logo" src="../static/images/beautypro_navy.png">
             <div class="social-media">
                 <a href="https://www.facebook.com/BeautyPro-Aesthetic-Clinic-102175348461558" class="media-logo" id="facebook"></a>
                 <a href="https://www.instagram.com/beautypro_aesthetic_clinic/" class="media-logo" id="insta"></a>
@@ -179,7 +240,7 @@
                     <p><b>Contact me:</b></p><br>
                     <p class="email">beautypro.aesthetic@gmail.com</p><br>
                     <p class="tel">+44 7533 929709</p><br>
-                    <a class="privacy-policy" id="policy-desktop" href="../privacy-policy.pdf">Privacy policy</a>
+                    <a class="privacy-policy" id="policy-desktop" href="../static/privacy-policy.pdf">Privacy policy</a>
                 </div>
                 <div class="footer-links">
                     <p><b>Find out more:</b></p><br>
@@ -190,12 +251,12 @@
                 <div class="footer-adress">
                     <p><b>Adress:</b></p><br>
                     <p>LS25 2PN Garforth,<br> Great Britain</p><br>
-                    <a class="privacy-policy" id="policy-mobile" href="../privacy-policy.pdf">Privacy policy</a>
+                    <a class="privacy-policy" id="policy-mobile" href="../static/privacy-policy.pdf">Privacy policy</a>
                 </div>
             </div>
         </footer>
-        <script src="../js/Animation.js"></script>
-        <script src="../js/moreOpinions.js"></script>
-        <script src="../js/moreDescriptions.js"></script>
+        <script src="../static/js/Animation.js"></script>
+        <script src="../static/js/moreOpinions.js"></script>
+        <script src="../static/js/moreDescriptions.js"></script>
     </body>
 </html>
