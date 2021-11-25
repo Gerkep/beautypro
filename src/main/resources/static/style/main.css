@@ -398,10 +398,18 @@ footer{
         margin-bottom: 2vw;
         font-size: 3vw;
     }
-    .header{float: left; margin: 1rem 0vw 1rem;}
-    #treatments-header{padding: 0 0 0 4vw;}
+    .container{opacity: 1;}
+    .header{ margin: 1rem 0vw 1rem;}
+    #stages-header{margin: 3vw 0 0 0vw;}
+    .stages{display: flex; justify-content: center; width: 100%; margin-top: 1vw; padding-bottom: 6vw;}
+    .stage-container{width: 33vw; opacity: 1;}
+    .stage-number{height: 7vw; margin: 1vw 35% 0vw 35%;}#first-stage{margin-top: 1vw;}
+    .stage-header{margin: 1vw 0 1vw 0; font-size: 2vw;}
+    .stage-desc{text-align: left; color: #ffffffda; margin: 0 5vw 0 5vw; font-size: 1vw;}
+    #treatments-header{padding: 2vw 0 0 4vw;}
     #treatments-container{
         padding: 2vw 0 5vw 0;
+        opacity: 1;
     }
     .treatment{
         width: 8vw;
@@ -416,18 +424,18 @@ footer{
         grid-template-rows: 10vw 25vw auto; 
         grid-template-columns: 40vw 50vw; 
         grid-template-areas: 
-          "container-header about-text"
+          "container-header container-header"
           "clinic-img about-text"; 
         margin: 5vw 0 5vw 0;
         padding-bottom: 9vw;
     }
 
-    .clinic-img{height: 30vw; width: 40vw; margin-top: 5vh; margin-left: 0;}
+    .clinic-img{height: 30vw; width: 40vw; margin-top: 5vw; margin-left: 0;}
     #more-clinic-text{display: inline !important;}
     .more-btn{
-        display: none !important;
+        display: none;
     }
-    .about-text {font-size: 1.3vw; border-left: solid 2px rgba(0, 41, 58, 0.5); padding: 0vw 2vw 1rem; margin: 9vw 0 0 4vw}
+    .about-text {font-size: 1.3vw; border-left: solid 2px rgba(0, 41, 58, 0.5); padding: 0vw 2vw 1rem; margin: 2vw 0 0 4vw}
     #about-container{
         grid-template-rows: 10vw 15vw 15vw; 
         grid-template-columns: 50vw 44vw; 
@@ -440,15 +448,14 @@ footer{
     #about-practitioner-text{padding: 0 2vw 0 0; margin: 1vh 4vw 0 0;border-right: solid 2px rgba(255, 255, 255, 0.5);}
     #more-about-text{display: inline;}
     .btn-img{height: 3vw;}
-    #opinions-header{padding: 5vw 0 0 5vw;}
     #hide-opinions-btn{margin: 2vh 48% 8vh 48%;}
     .opinion-container{
+        opacity: 1;
         width: 18vw; 
         height: 24vw;
         margin: 4vw 4vw 4vw 4vw; 
         grid-template-columns: 1fr; 
         grid-template-rows: 0.2fr 1.8fr 0.2fr; 
-        gap: 0px 0px; 
         grid-template-areas:
           "quote-before" 
           "description"
@@ -461,14 +468,19 @@ footer{
       .description {font-size: 1.2vw; margin: 0; text-align: center;}
       .stars { grid-area: stars; width: 10vw; margin: 0 auto;}
       #more-opinions-btn{font-size: 2vw; margin: 1vw 40% 5vw 40%;}
-      #contact-container{
-          width: 80%;
-          margin: 0 auto;
+      .testimonials-text{font-size: 1.6vw; margin-top: 1vw;}
+      .testimonials-containers{display: flex; width: 100%; justify-content: center;}
+      .testimonials-block{width: 12vw; height: 12vw; align-items: center; opacity: 1; padding: 2vw 2vw 2vw 2vw; margin: 4vw 3vw 4vw 3vw; font-weight: 700;}
+      .testimonials-block p{padding:4vw 0vw 2vw 0vw; font-size: 1.05vw;}
+      .testimonials-tab{position: absolute; width: 3vw; height: 4vw; margin-top: -6.4vw;}
+      .testimonials-under{margin-top: 1vw !important; margin-bottom: 8vw;}
+        #contact-container{          margin: 0 auto;
           padding: 10vh 0 10vh 0;
           margin-bottom: 14vh;
           border-bottom-right-radius: 30px;
           border-bottom-left-radius: 30px;
           box-shadow: 4px 24px 60px #00000096;
+          width: 80%;
       }
       #email-input{
         height: 6vh;
@@ -476,7 +488,7 @@ footer{
     }
     #message-input{
         margin-top: 3vh;
-        height: 8vw;
+        height: 6vw;
         font-size: 1.5vw; 
     }
     .send-btn{
@@ -484,7 +496,14 @@ footer{
         border: solid white 2px;
         font-size: 1.5vw;
         margin-top: 4vh;
+        cursor: pointer;
     }
+    .initial-consultations{padding: 0 5vw 0 5vw;}
+    #initial-consultation-header{margin-top: 3vw; font-size: 2vw;}
+    #initial-consultations-text-more{text-align: left; font-size: 1vw;}
+    .consultation-pros{margin: 3vw 0 0 6vw;}
+    .initial-consultation-text{font-size: 1vw; margin-top: 1.5vw;}
+    #more-contact-btn{font-size: 1vw; display: inline;}
     footer{
         grid-template-columns: 20vw 45vw 35vw; 
         grid-template-rows: 1fr; 
