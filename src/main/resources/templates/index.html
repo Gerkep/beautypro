@@ -62,7 +62,7 @@
                 <a href="https://beauty-pro.herokuapp.com/pricing#exessive-sweating-hyperdosis" class="treatment"><img class="treatment-img" src="../images/sweat.png"><p class="treatment-txt">Sweating hyperhidosis</p></a>
                 <a href="https://beauty-pro.herokuapp.com/pricing#teeth-grinding" class="treatment"><img class="treatment-img" src="../images/tooth.png"><p class="treatment-txt">Teeth grinding</p></a>
                 <a href="https://beauty-pro.herokuapp.com/pricing#facials" class="treatment"><img class="treatment-img" id="face" src="../images/face.png"><p class="treatment-txt">Facials</p></a>
-                <a href="https://beauty-pro.herokuapp.com/pricing#dermal-filters" class="treatment"><img class="treatment-img" src="../images/mouth.png"><p class="treatment-txt">Dermal filters</p></a>
+                <a href="https://beauty-pro.herokuapp.com/pricing#dermal-filters" class="treatment"><img class="treatment-img" id="mouth" src="../images/mouth.png"><p class="treatment-txt">Dermal filters</p></a>
                 <a href="https://beauty-pro.herokuapp.com/pricing#skin-boosters" class="treatment"><img class="treatment-img" src="../images/skin.png"><p class="treatment-txt">Skin boosters</p></a>
                 <a href="https://beauty-pro.herokuapp.com/pricing#weight-managment" class="treatment"><img class="treatment-img" src="../images/scale.png"><p class="treatment-txt">Weight managment</p></a>
                 <a href="https://beauty-pro.herokuapp.com/pricing#vitamin-injections" class="treatment"><img class="treatment-img" src="../images/injection.png"><p class="treatment-txt">Vitamin injections</p></a>
@@ -130,7 +130,7 @@
                         <p class="description">Absolutnie zadowolona z wizyty w BeautyPro Aesthetic Clinic Pani Paulina bardzo profesjonalnie podchodzi to swojej pracy przy czym jest miłą i wesołą osoba co sprawiło że czułam się bardzo zrelaksowana mój Botox efekt mega polecam w 100% wrócę na pewno bez dwóch zdań.</p>
 
                     </div>
-                    <button onclick="hideOpinions()" class="less-opinions" id="hide-opinions-btn"><img class="btn-img" src="../static/images/hide-button.png"></button>
+                    <button onclick="hideOpinions()" class="less-opinions" id="hide-opinions-btn"><img class="btn-img" src="../images/hide-button.png"></button>
             </div>
             </div>
         </div>
@@ -204,9 +204,10 @@
                 <h2 class="contact-header">LET'S KEEP IN TOUCH!</h2>
             </div>
             <form autocomplete="off" th:action="@{/send}" method="POST" class="contact-form">
-                <input class="input" id="email-input" type="email" th:field="${mail.sender}" placeholder="Email">
+                <input class="input email-input" id="email-input" type="email" th:field="${mail.sender}" placeholder="Email">
+                <p class="err-txt" id="err-txt">Please type in correct email.</p>
                 <textarea class="input" id="message-input" th:field="${mail.text}" placeholder="Message..."></textarea>
-                <button class="send-btn" type="submit">Send</button>
+                <button class="send-btn" id="submit-btn" type="submit">Send</button>
             </form>
             <div class="initial-consultations">
                 <h3 id="initial-consultation-header">What to expect during the initial consultation?</h3>
@@ -261,5 +262,6 @@
         <script src="../js/Animation.js"></script>
         <script src="../js/moreOpinions.js"></script>
         <script src="../js/moreDescriptions.js"></script>
+        <script src="../js/Validation.js"></script>
     </body>
 </html>

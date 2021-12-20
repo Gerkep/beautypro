@@ -8,7 +8,7 @@ if(screen.width<1200){
     const observer = new IntersectionObserver(startAnimation);
     const options = { root: null, rootMargin: '120px', threshold: 1 }; 
     
-    const elements = document.querySelectorAll('.stage-container, .treatments-container, .testimonials-block, .container, .transformation, .opinion-container');
+    const elements = document.querySelectorAll('.treatments-container, .testimonials-block, .treatment, .transformation, .opinion-container');
     elements.forEach(el => {
       observer.observe(el, options);
     });
