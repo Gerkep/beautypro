@@ -6,6 +6,7 @@ body{
     text-align: center;
     background-color: #00293aff;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 .logo{
     height: 24vw;
@@ -15,7 +16,6 @@ body{
 .main-message{
     margin-top: 10vw;
     font-size: 10vw;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 .tick-container{
@@ -31,13 +31,11 @@ body{
 }
 .thanks-txt{
     margin-top: 14vw;
-font-family: 'Lora', serif;
 }
 .affirmation{
     color: rgba(255, 255, 255, 0.849);
     margin-top: 4vw;
     margin-bottom: 4vw;
-font-family: 'Lora', serif;
 }
 .backlink{
     text-decoration: none;
@@ -45,7 +43,6 @@ font-family: 'Lora', serif;
     -webkit-background-clip: text;background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
-font-family: 'Lora', serif;
 cursor: pointer;
 }
 

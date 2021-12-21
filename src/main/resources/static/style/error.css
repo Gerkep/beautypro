@@ -6,6 +6,7 @@ body{
     background-color: #00293aff;
     text-align: center;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 .logo{
     height: 24vw;
@@ -22,13 +23,11 @@ body{
     margin-top: 12vw;
     text-align: center;
     color: rgba(255, 255, 255, 0.794);
-    font-family: 'Lora', serif;
 }
 .back-txt{
     text-align: center;
     margin-top: 6vw;
     font-weight: 1000;
-    font-family: 'Lora', serif;
 }
 .back-link{
     background: #ab9b76;
