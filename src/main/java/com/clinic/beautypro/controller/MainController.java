@@ -38,6 +38,7 @@ public class MainController {
         model.addAttribute("mail", new MyMail("", ""));
         return "index";
     }
+
     @GetMapping("/error")
     public String errorPage() {
         return "error";
