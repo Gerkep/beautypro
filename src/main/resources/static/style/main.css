@@ -130,7 +130,6 @@ body{
     padding: 3vw 3vw 3vw 3vw;
     border-radius: 30px;
 }
-.treatment:hover{transition: all 0.8s ease; border: solid 1.5px white; transform: scale(1.1); box-shadow: 0 5px 30px rgba(0, 0, 0, 0.616);}
 .treatment-img {
     max-height: 70%;
     grid-area: treatment-img; 
@@ -429,6 +428,7 @@ footer{
     }
     #face{max-height: 60%; max-width: 60%; margin: 1vw 1vw 0 0 }
     .treatment-txt {font-size: 2vw; font-weight: 700;}
+    .treatment:hover{transition: all 0.8s ease; border: solid 1.5px white; transform: scale(1.1); box-shadow: 0 5px 30px rgba(0, 0, 0, 0.616);}
     #clinic-container{
         display: grid; 
         grid-template-rows: 10vw 25vw auto; 
