@@ -102,4 +102,13 @@ body{
         width: 40vw;
         margin: 20vh 5vh 0 5vh;
     }
+    .carousel-control-prev-icon {
+        height: 3vw !important;
+        width: 3vw !important;
+       }
+       
+       .carousel-control-next-icon {
+        height: 3vw !important;
+        width: 3vw !important;
+       }
 }
